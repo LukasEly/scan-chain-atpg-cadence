@@ -1,0 +1,24 @@
+# Logs e arquivos gerados pelo Genus e pelo Innovus
+genus.log*
+genus.cmd*
+innovus.log*
+innovus.logv*
+*.rpt
+rep_*.txt
+fv/
+timingReports/
+*.enc
+*.enc.dat/
+
+# Simulação
+work/
+transcript
+*.wlf
+xcelium.d/
+xrun.*
+waves.shm/
+
+# Editores / SO
+.vscode/
+.DS_Store
+Thumbs.db
