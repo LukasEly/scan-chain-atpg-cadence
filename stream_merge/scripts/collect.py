@@ -129,12 +129,16 @@ def main():
                 row.update({f"{phase}_{k}": v for k, v in d.items()})
         row.update(parse_chains(read(os.path.join(rep, "dft_chains.txt"))))
 
-        modus_txt = read(os.path.join(run, "logs", "modus_stdout.log"))
+        # O Modus roda com "-STDOUT summary": as estatísticas de cobertura ficam
+        # nos logs internos de cada etapa (testresults/logs/log_<etapa>_...).
         logdir = os.path.join(run, "logs")
-        for f in sorted(os.listdir(logdir)) if os.path.isdir(logdir) else []:
-            if f.startswith("log_"):
-                modus_txt += "\n" + read(os.path.join(logdir, f))
-        row.update(parse_modus(modus_txt))
+        mlogdir = os.path.join(run, "outputs", "dft", "modus_atpg", "testresults", "logs")
+        modus_logs = []
+        if os.path.isdir(mlogdir):
+            modus_logs = [os.path.join(mlogdir, f) for f in sorted(os.listdir(mlogdir))]
+        atpg_txt = "\n".join(read(p) for p in modus_logs
+                             if os.path.basename(p).startswith("log_create_logic_tests"))
+        row.update(parse_modus(atpg_txt or read(os.path.join(logdir, "modus_stdout.log"))))
 
         # overhead de área causado pelo scan
         if row.get("pre_cell_area") and row.get("post_cell_area"):
@@ -151,6 +155,12 @@ def main():
             p = os.path.join(logdir, f)
             if os.path.isfile(p):
                 shutil.copy(p, dst)
+        # logs internos do Modus (sem o carimbo de data no nome)
+        mdst = os.path.join(dst, "modus_logs")
+        os.makedirs(mdst, exist_ok=True)
+        for p in modus_logs:
+            name = re.sub(r"_\d{12}-\d+$", "", os.path.basename(p))
+            shutil.copy(p, os.path.join(mdst, name + ".txt"))
 
     keys = []
     for r in rows:
