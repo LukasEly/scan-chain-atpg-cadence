@@ -22,3 +22,6 @@ waves.shm/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# stream_merge: diretórios de rodada (pesados). Os relatórios vão para stream_merge/results/
+stream_merge/runs/

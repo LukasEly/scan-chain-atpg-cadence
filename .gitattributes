@@ -1,0 +1,6 @@
+# scripts precisam de LF para rodar no Linux do laboratório
+*.sh text eol=lf
+*.py text eol=lf
+*.tcl text eol=lf
+*.sv text eol=lf
+*.sdc text eol=lf
