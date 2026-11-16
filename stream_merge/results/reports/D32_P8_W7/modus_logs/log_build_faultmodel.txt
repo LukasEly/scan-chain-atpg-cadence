@@ -1,0 +1,122 @@
+Starting Command: build_faultmodel 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_faultmodel -includedynamic no -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_faultmodel_111626204454-368544000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 20:44:54 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1775515.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg
+
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_faultmodel_111626204454-368544000
+            -STDOUT summary
+            -includedynamic no
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TFM-099): Build Fault Model started.  [end TFM_099] 
+INFO (TFM-102): Creating faultModel file /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/tbdata/faultModel.  [end TFM_102] 
+
+Global Ignored Static Fault Count                 2
+Global Ignored Dynamic Fault Count                0
+
+
+                            Global Statistics
+
+                    ATCov  ----------------------- Global Faults --------------------------
+                   Global        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00         6534            0            0            0         6534
+Collapsed Static     0.00         5563            0            0            0         5563
+PI Static            0.00          170            0            0            0          170
+PO Static            0.00           92            0            0            0           92
+
+Total Dynamic                        0
+
+Parametric        
+
+IDDq                 0.00         6534            0                                   6534
+
+
+
+INFO (TFM-103): Creating faultStatus file /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/tbdata/faultStatus.  [end TFM_103] 
+
+                           Testmode Statistics: FULLSCAN
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00   0.00         6534            0            0            0         6534         6534            0            0            0         6534
+Collapsed Static     0.00   0.00         5563            0            0            0         5563         5563            0            0            0         5563
+PI Static            0.00   0.00          170            0            0            0          170          170            0            0            0          170
+PO Static            0.00   0.00           92            0            0            0           92           92            0            0            0           92
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00         6534            0                                   6534         6534            0                                   6534
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+
+                  %Active      #Faults      #Active    #Inactive
+Total Static       100.00         6534         6534            0
+Collapsed Static   100.00         5563         5563            0
+PI Static          100.00          170          170            0
+PO Static          100.00           92           92            0
+
+Total Dynamic                        0
+
+Parametric        
+
+There are 1 test mode(s) defined:
+      FULLSCAN
+
+[end TFM_704]
+INFO (TFM-109): Build Fault Model has completed with highest level severity message of INFO.  [end TFM_109] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,787,968  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.08                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 20:44:54 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFM-099): Build Fault Model started.   
+      1 INFO (TFM-102): Creating faultModel file /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/tbdata/faultModel.   
+      1 INFO (TFM-103): Creating faultStatus file /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/tbdata/faultStatus.   
+      1 INFO (TFM-109): Build Fault Model has completed with highest level severity message of INFO.   
+      1 INFO (TFM-704): Maximum Global Test Coverage Statistics: 
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

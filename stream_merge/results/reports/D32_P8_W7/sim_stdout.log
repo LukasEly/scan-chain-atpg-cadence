@@ -1,0 +1,6 @@
+TOOL:	xrun(64)	23.03-s003: Started on Nov 16, 2026 at 20:45:04 -03
+xrun(64): 23.03-s003: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+xrun: *W,MKDIRM: More than one level of directory hierarchy had to be created for outputs/dft/modus_atpg.
+xrun: *E,FILEMIS: Cannot find the provided file outputs/dft/modus_atpg/stream_merge.test_netlist.v.
+xrun: *E,FILEMIS: Cannot find the provided file outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.mainsim.v.
+TOOL:	xrun(64)	23.03-s003: Exiting on Nov 16, 2026 at 20:45:05 -03  (total: 00:00:01)
