@@ -35,9 +35,10 @@ check_dft_rules > $_REPORTS_PATH/dft_rules_pre.txt
 
 ## troca flip-flops comuns por scan flip-flops
 replace_scan
-## prévia (apenas relatório) e inserção de fato
+## prévia (apenas relatório) e inserção de fato.
+## Obs.: -pack só é aceito junto com -preview (igual ao tutorial).
 connect_scan_chains -auto_create_chains -preview -pack > $_REPORTS_PATH/dft_preview.txt
-connect_scan_chains -auto_create_chains -pack
+connect_scan_chains -auto_create_chains
 
 ## 3) SÍNTESE INCREMENTAL (otimiza a lógica de scan recém inserida) ------------------------
 puts "################ Incremental Synthesis (Post DfT) #############"

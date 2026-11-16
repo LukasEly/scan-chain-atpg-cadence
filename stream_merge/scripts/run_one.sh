@@ -42,8 +42,13 @@ cd "$RUN" || exit 1
 export SM_ROOT="$ROOT" DATA_W DEPTH WMAX NCHAINS
 
 ## ---- 1) Genus -------------------------------------------------------------
+## "< /dev/null": se algum comando falhar, o Genus cai no prompt interativo;
+## sem entrada ele recebe EOF e encerra, em vez de ficar travado esperando.
+## O progresso aparece na tela só com as linhas de etapa (o log completo fica
+## em logs/genus_stdout.log).
 genus -no_gui -files "$ROOT/synthesis/run_genus.tcl" -log logs/genus \
-  > logs/genus_stdout.log 2>&1
+  < /dev/null 2>&1 | tee logs/genus_stdout.log \
+  | grep --line-buffered -E "^##########|syn_generic|syn_map|syn_opt|Incremental|Error|ERROR|Failed"
 if ! grep -q "GENUS OK" logs/genus_stdout.log; then
   echo "ERRO no Genus. Veja $RUN/logs/genus_stdout.log"
   tail -30 logs/genus_stdout.log
@@ -58,7 +63,7 @@ echo "[ok] Genus"
 ## build_model -> build_testmode -> verify_test_structures -> build_faultmodel
 ## -> create_logic_tests (ATPG) -> write_vectors
 modus -file outputs/dft/modus_atpg/runmodus.atpg.tcl \
-  > logs/modus_stdout.log 2>&1
+  < /dev/null > logs/modus_stdout.log 2>&1
 echo "[ok] Modus (status $?)"
 # guarda também os logs internos do Modus, se existirem
 find . -path ./logs -prune -o -name "log_*" -type f -print 2>/dev/null \
