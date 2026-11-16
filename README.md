@@ -8,8 +8,10 @@ Trabalho 2 da disciplina **Confiabilidade e Segurança de Hardware** (PUCRS), 10
 
 ## Autores
 
-- Lukas Ely
 - Bruno Becker Silva
+- Gabriel Eduardo Decian
+- Lukas Ely
+- Matheus Robin
 
 ## Tecnologias
 
