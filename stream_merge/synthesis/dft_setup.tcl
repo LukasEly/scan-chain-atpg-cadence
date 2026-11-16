@@ -36,8 +36,10 @@ check_dft_rules > $_REPORTS_PATH/dft_rules_pre.txt
 ## troca flip-flops comuns por scan flip-flops
 replace_scan
 ## prévia (apenas relatório) e inserção de fato.
-## Obs.: -pack só é aceito junto com -preview (igual ao tutorial).
-connect_scan_chains -auto_create_chains -preview -pack > $_REPORTS_PATH/dft_preview.txt
+## Obs.: -pack só junto com -preview (igual ao tutorial). Não redirecionar a
+## saída com "> arquivo": nesse comando o Genus interpreta o nome do arquivo
+## como o argumento <design> (erro TUI-61). A prévia fica no log do Genus.
+connect_scan_chains -auto_create_chains -preview -pack
 connect_scan_chains -auto_create_chains
 
 ## 3) SÍNTESE INCREMENTAL (otimiza a lógica de scan recém inserida) ------------------------
