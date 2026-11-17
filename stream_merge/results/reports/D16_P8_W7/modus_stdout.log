@@ -1,0 +1,4 @@
+Starting Modus DFT Software Solution Tcl UI.
+Type "exit" to return to your previous environment.
+free(): invalid next size (fast)
+/soft64/cadence/ferramentas/MODUS211/tools/tb/bin/64bit/.modus.native: line 2036: 1956982 Aborted                 (core dumped) tclsh $fwPrompt

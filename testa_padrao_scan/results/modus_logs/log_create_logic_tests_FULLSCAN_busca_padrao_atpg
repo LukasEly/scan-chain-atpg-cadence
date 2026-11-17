@@ -1,0 +1,163 @@
+Starting Command: create_logic_tests 
+
+INFO (TDA-005): Command Line Invocation: 
+            create_logic_tests -testmode FULLSCAN -experiment busca_padrao_atpg -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_busca_padrao_atpg_111626211750-393975000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:17:50 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1889088.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+            -EXPERIMENT busca_padrao_atpg
+
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_busca_padrao_atpg_111626211750-393975000
+            -STDOUT summary
+[end TDA_009]
+
+
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+****************************************************************************************************
+Coverage Definitions:
+ #Faults  : Number of Active Faults (observable).
+ #Tested  : Number of Active Faults marked tested.
+ #Possibly: Number of Active Faults marked possibly tested
+            (good value is 0 or 1; fault value is X).
+ #Redund  : Number of Active Faults untestable due to redundancy.
+ #Untested: Number of Active Faults untested.
+ %TCov  (%Test Coverage)                      : #Tested / #Faults
+ %ATCov (%Adjusted TCov)                      : #Tested / (#Faults-#Redund)
+****************************************************************************************************
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  6885            0            0            0         6885   0.00   0.00
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  6885            0            0            0         6885   0.00   0.00
+****************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Scan Test generation                                                   [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1        945    13.73%   13.73%         5940           00:01.69    [end TDA_220] 
+INFO (TTC-110): Ending Scan Test generation                                                     [end TTC_110] 
+*************************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Reset/Set Test Generation                                              [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):      1       1        118    15.44%   15.44%         5822           00:01.84    [end TDA_220] 
+INFO (TTC-110): Ending Reset/Set Test Generation                                                [end TTC_110] 
+*************************************************************************************************************
+
+*************************************************************************************************************
+INFO (TTC-110): Starting Static Logic Test generation                                           [end TTC_110] 
+
+INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
+INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
+INFO (TDA-220):     16      16       3111    60.62%   60.62%         2711           00:02.60    [end TDA_220] 
+INFO (TDA-220):     32      32        589    69.18%   69.18%         2122           00:02.64    [end TDA_220] 
+INFO (TDA-220):     48      48        320    73.83%   73.83%         1802           00:02.67    [end TDA_220] 
+INFO (TDA-220):     64      64        342    78.79%   78.79%         1460           00:02.70    [end TDA_220] 
+INFO (TDA-220):     80      80        146    80.92%   80.92%         1314           00:02.73    [end TDA_220] 
+INFO (TDA-220):     96      96        194    83.73%   83.73%         1120           00:02.76    [end TDA_220] 
+INFO (TDA-220):    112     112         70    84.75%   84.75%         1050           00:02.78    [end TDA_220] 
+INFO (TDA-220):    128     128        137    86.74%   86.74%          913           00:02.81    [end TDA_220] 
+INFO (TDA-220):    144     144        126    88.57%   88.57%          787           00:02.84    [end TDA_220] 
+INFO (TDA-220):    160     160        161    90.91%   90.91%          626           00:02.86    [end TDA_220] 
+INFO (TDA-220):    176     176         98    92.33%   92.33%          528           00:02.89    [end TDA_220] 
+INFO (TDA-220):    190     188         29    92.75%   92.75%          499           00:03.01    [end TDA_220] 
+INFO (TDA-220):    206     204         76    93.86%   93.86%          423           00:03.02    [end TDA_220] 
+INFO (TDA-220):    222     219         36    94.38%   94.38%          387           00:03.03    [end TDA_220] 
+INFO (TDA-220):    238     235         40    94.96%   94.96%          347           00:03.03    [end TDA_220] 
+INFO (TDA-220):    254     251         45    95.61%   95.61%          302           00:03.04    [end TDA_220] 
+INFO (TDA-220):    270     267         35    96.12%   96.12%          267           00:03.04    [end TDA_220] 
+INFO (TDA-220):    286     282         34    96.62%   96.62%          233           00:03.04    [end TDA_220] 
+INFO (TDA-220):    302     298         32    97.08%   97.08%          201           00:03.05    [end TDA_220] 
+INFO (TDA-220):    318     313         36    97.60%   97.60%          165           00:03.05    [end TDA_220] 
+INFO (TDA-220):    334     329         28    98.01%   98.01%          137           00:03.05    [end TDA_220] 
+INFO (TDA-220):    350     345         24    98.36%   98.36%          113           00:03.06    [end TDA_220] 
+INFO (TDA-220):    366     359         28    98.77%   98.77%           85           00:03.06    [end TDA_220] 
+INFO (TDA-220):    377     370         19    99.04%   99.04%           66           00:03.06    [end TDA_220] 
+INFO (TDA-220):    393     386         27    99.43%   99.43%           39           00:03.08    [end TDA_220] 
+INFO (TDA-220):    409     402         27    99.83%   99.83%           12           00:03.08    [end TDA_220] 
+INFO (TDA-220):    415     408         10    99.97%   99.97%            2           00:03.09    [end TDA_220] 
+INFO (TDA-221):    415     408          0    99.97%   99.97%            2           00:03.09    [end TDA_221] 
+INFO (TDA-220):    415     408          0    99.99%   99.99%            1           00:03.16    [end TDA_220] 
+INFO (TTC-110): Ending Static Logic Test generation                                             [end TTC_110] 
+*************************************************************************************************************
+
+****************************************************************************************************
+                           Testmode Statistics: FULLSCAN
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  6885         6883            0            1            1  99.97  99.99
+
+                            Global Statistics
+
+                           #Faults      #Tested    #Possibly      #Redund    #Untested  %TCov %ATCov
+Total Static                  6885         6883            0            1            1  99.97  99.99
+****************************************************************************************************
+
+
+              ----Final Pattern Statistics----
+
+ Test Section Type                       # Test Sequences
+----------------------------------------------------------
+ Scan                                           1
+ Logic                                          409
+----------------------------------------------------------
+ Total                                          410
+
+(I) File(s) generated (bytes and name):
+
+          86016 /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/tbdata/faultStatus.FULLSCAN.busca_padrao_atpg
+         453023 /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/tbdata/TBDbin.FULLSCAN.busca_padrao_atpg
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,874,640  bytes
+
+                      CPU Time =    0:00:01.14
+                  Elapsed Time =    0:00:03.20                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:17:53 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+     36 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -   
+      1 INFO (TDA-221):    415     408          0    99.97%   99.97%            2           00:03.09     
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      6 INFO (TTC-110): Starting Scan Test generation                                                    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,122 @@
+Starting Command: commit_tests 
+
+INFO (TDA-005): Command Line Invocation: 
+            commit_tests -inexperiment stream_merge_atpg -testmode FULLSCAN -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/testresults/logs/log_commit_tests_FULLSCAN_stream_merge_atpg_111626215310-708255000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:53:10 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1943978.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -INEXPERIMENT stream_merge_atpg
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/testresults/logs/log_commit_tests_FULLSCAN_stream_merge_atpg_111626215310-708255000
+            -STDOUT summary
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+
+INFO (TBD-806): Input test vector File(s) (bytes, name):  [end TBD_806] 
+         113062 /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/tbdata/TBDbin.FULLSCAN.stream_merge_atpg
+
+INFO (TBD-807): Experiment stream_merge_atpg odometers prior to commit_tests: 1.1.1.2.1 thru 1.2.1.6.1 (Relative test numbers 1 thru 52).  [end TBD_807] 
+
+Testmode and Global statistics prior to commit_tests
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static         0.00   0.00         6562            0            0            0         6562         6562            0            0            0         6562
+Collapsed Static     0.00   0.00         5591            0            0            0         5591         5591            0            0            0         5591
+PI Static            0.00   0.00          184            0            0            0          184          184            0            0            0          184
+PO Static            0.00   0.00          106            0            0            0          106          106            0            0            0          106
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00         6562            0                                   6562         6562            0                                   6562
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+
+Testmode and Global statistics after commit_tests
+
+                 ---- ATCov ---- ------------------------ Testmode Faults ----------------------- ------------------------- Global Faults ------------------------
+                 Testmode Global        Total       Tested     Possibly    Redundant     Untested        Total       Tested     Possibly    Redundant     Untested
+
+Total Static       100.00 100.00         6562         6562            0            0            0         6562         6562            0            0            0
+Collapsed Static   100.00 100.00         5591         5591            0            0            0         5591         5591            0            0            0
+PI Static          100.00 100.00          184          184            0            0            0          184          184            0            0            0
+PO Static          100.00 100.00          106          106            0            0            0          106          106            0            0            0
+
+Total Dynamic                               0
+
+Parametric        
+
+IDDq                 0.00   0.00         6562            0                                   6562         6562            0                                   6562
+
+Path                 0.00   0.00            0            0                                      0            0            0                                      0
+
+
+
+INFO (TBD-810): Experiment stream_merge_atpg is saved to the master test vectors odometers: 1.1.1.2.1 to 1.2.1.6.1 (Relative test numbers 1 to 52).  [end TBD_810] 
+
+INFO (TBD-809): Master test vector file statistics:  [end TBD_809]   
+  experiments     = 1
+  test sections   = 2
+  tester loops    = 2
+  test procedures = 8
+  test sequence   = 52
+  init sequencess = 2
+
+INFO (TBD-805): File(s) generated (bytes and name):  [end TBD_805] 
+         113062 /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/tbdata/TBDbin.FULLSCAN 
+         135168 /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/tbdata/faultStatus 
+
+INFO (TBD-831): commit_tests completed successfully.  [end TBD_831] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,398,176  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.04                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:53:10 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TBD-805): File(s) generated (bytes and name):   
+      1 INFO (TBD-806): Input test vector File(s) (bytes, name):   
+      1 INFO (TBD-807): Experiment stream_merge_atpg odometers prior to commit_tests: 1.1.1.2.1 thru 1.2.1.6.1 (Relative test numbers 1 thru 52).   
+      1 INFO (TBD-809): Master test vector file statistics:     
+      1 INFO (TBD-810): Experiment stream_merge_atpg is saved to the master test vectors odometers: 1.1.1.2.1 to 1.2.1.6.1 (Relative test numbers 1 to 52).   
+      1 INFO (TBD-831): commit_tests completed successfully.   
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

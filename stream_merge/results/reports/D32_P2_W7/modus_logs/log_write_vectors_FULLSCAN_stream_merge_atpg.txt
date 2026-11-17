@@ -1,0 +1,115 @@
+Starting Command: write_vectors 
+
+INFO (TDA-005): Command Line Invocation: 
+            write_vectors -language verilog -inexperiment stream_merge_atpg -testmode FULLSCAN -scanformat parallel -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626212338-697352000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:23:38 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1898437.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -INEXPERIMENT stream_merge_atpg
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626212338-697352000
+            -STDOUT summary
+            -scanformat parallel
+          + -language verilog
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TVE-001): Verilog write vectors started.   [end TVE_001] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified SCAN offset for this clock 'pin clk'.  A default clock offset of 16.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-004): Reading test section 1.1. Test section type equals scan.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/verilog/cycleMap.FULLSCAN.stream_merge_atpg.   [end TVE_003] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.data.scan.ex1.ts1.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 168 total cycles, of which 4 are test cycles, 164 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 82 total measures, of which 0 are PO measures and 82 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-004): Reading test section 1.2. Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.data.logic.ex1.ts2.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 2272 total cycles, of which 58 are test cycles, 2214 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 3408 total measures, of which 1276 are PO measures and 2132 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.mainsim.v.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+    Test       | Global   | Global   | Global   | Global   | Global   | Global   | Sequence   | Overlapped | Total      | 
+    Sequence   | Static   | Static   | Static   | Dynamic  | Dynamic  | Dynamic  | Cycle      | Cycle      | Cycle      | 
+               | Total    | Delta    | Adjusted | Total    | Delta    | Adjusted | Count      | Count      | Count      | 
+               | Coverage | Coverage | Total    | Coverage | Coverage | Total    |            |            |            | 
+               |          |          | Coverage |          |          | Coverage |            |            |            | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.1 |  25.48   |  0.00    |  25.48   |  0.00    |  0.00    |  0.00    |        167 |          0 |        168 |
+     1.2.1.1.1 |  25.48   |  0.00    |  25.48   |  0.00    |  0.00    |  0.00    |          1 |          0 |        169 |
+     1.2.1.2.1 |  43.77   |  18.29   |  43.77   |  0.00    |  0.00    |  0.00    |        167 |         83 |        336 |
+     1.2.1.2.2 |  54.12   |  10.35   |  54.12   |  0.00    |  0.00    |  0.00    |         84 |         83 |        420 |
+     1.2.1.2.3 |  62.89   |  8.77    |  62.89   |  0.00    |  0.00    |  0.00    |         84 |         83 |        504 |
+     1.2.1.2.4 |  63.16   |  0.26    |  63.16   |  0.00    |  0.00    |  0.00    |         84 |         83 |        588 |
+     1.2.1.2.5 |  64.69   |  1.54    |  64.69   |  0.00    |  0.00    |  0.00    |         84 |         83 |        672 |
+     1.2.1.2.6 |  66.71   |  2.02    |  66.71   |  0.00    |  0.00    |  0.00    |         84 |         83 |        756 |
+     1.2.1.2.7 |  67.41   |  0.70    |  67.41   |  0.00    |  0.00    |  0.00    |         84 |         83 |        840 |
+     1.2.1.2.8 |  67.59   |  0.18    |  67.59   |  0.00    |  0.00    |  0.00    |         84 |         83 |        924 |
+     1.2.1.2.9 |  67.81   |  0.22    |  67.81   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1008 |
+    1.2.1.2.10 |  92.02   |  24.21   |  92.02   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1092 |
+    1.2.1.2.11 |  92.81   |  0.79    |  92.81   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1176 |
+    1.2.1.2.12 |  92.89   |  0.09    |  92.89   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1260 |
+    1.2.1.2.13 |  92.98   |  0.09    |  92.98   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1344 |
+    1.2.1.2.14 |  93.51   |  0.53    |  93.51   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1428 |
+    1.2.1.2.15 |  96.97   |  3.46    |  96.97   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1512 |
+    1.2.1.2.16 |  98.33   |  1.36    |  98.33   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1596 |
+     1.2.1.3.1 |  98.55   |  0.22    |  98.55   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1680 |
+     1.2.1.3.2 |  98.60   |  0.04    |  98.60   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1764 |
+     1.2.1.3.3 |  98.77   |  0.18    |  98.77   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1848 |
+     1.2.1.3.4 |  98.82   |  0.04    |  98.82   |  0.00    |  0.00    |  0.00    |         84 |         83 |       1932 |
+     1.2.1.3.5 |  99.12   |  0.31    |  99.12   |  0.00    |  0.00    |  0.00    |         84 |         83 |       2016 |
+     1.2.1.4.1 |  99.61   |  0.48    |  99.61   |  0.00    |  0.00    |  0.00    |         85 |         83 |       2101 |
+     1.2.1.4.2 |  99.74   |  0.13    |  99.74   |  0.00    |  0.00    |  0.00    |         85 |         83 |       2186 |
+     1.2.1.4.3 |  99.87   |  0.13    |  99.87   |  0.00    |  0.00    |  0.00    |         85 |         83 |       2271 |
+     1.2.1.5.1 |  99.96   |  0.09    |  99.96   |  0.00    |  0.00    |  0.00    |         84 |         83 |       2355 |
+     1.2.1.5.2 |  100.00   |  0.04    |  100.00   |  0.00    |  0.00    |  0.00    |         85 |          0 |       2440 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,241,616  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.07                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:23:38 2026  -03
+
+INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TVE-001): Verilog write vectors started.    
+      1 INFO (TVE-002): Verilog write vectors has completed.    
+      4 INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/verilog/cycleMap.FULLSCAN.stream_merge_atpg.    
+      2 INFO (TVE-004): Reading test section 1.1. Test section type equals scan.    
+      2 INFO (TVE-005): Created 168 total cycles, of which 4 are test cycles, 164 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      2 INFO (TVE-008): Created 82 total measures, of which 0 are PO measures and 82 are SO (Scan Out) measures.   
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+      2 INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

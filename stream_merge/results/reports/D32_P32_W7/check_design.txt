@@ -1,0 +1,11 @@
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'stream_merge'
+
+No empty modules in design 'stream_merge'
+
+  Done Checking the design.

@@ -1,0 +1,102 @@
+Reporting registers that pass DFT rules
+  credit0_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  credit0_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  credit0_reg_2 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  credit1_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  credit1_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  credit1_reg_2 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  lock_src_reg 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  locked_reg 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_10 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_11 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_12 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_13 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_14 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_15 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_16 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_17 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_18 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_19 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_2 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_20 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_21 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_22 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_23 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_24 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_25 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_26 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_27 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_28 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_29 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_3 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_30 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_31 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_4 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_5 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_6 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_7 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_8 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_0_9 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_10 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_11 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_12 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_13 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_14 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_15 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_16 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_17 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_18 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_19 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_2 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_20 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_21 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_22 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_23 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_24 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_25 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_26 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_27 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_28 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_29 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_3 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_30 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_31 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_4 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_5 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_6 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_7 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_8 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_data_reg_1_9 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_eop_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_eop_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_sop_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_sop_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_src_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  mem_src_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  occ_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  occ_reg_1 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  rd_ptr_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+  wr_ptr_reg_0 	PASS; Test clock: clk/rise; Mapped for DFT; 
+Reporting registers that fail DFT rules
+Reporting registers that are preserved or marked dont-scan
+Reporting registers that are marked Abstract Segment Dont Scan
+Reporting registers that are part of shift register segments
+Reporting registers that are identified as lockup elements
+Reporting registers that are level-sensitive elements
+Reporting misc. non-scan registers
+Reporting registers that pass dft rule checks and are not a part of scan chains
+Summary: 
+Total registers that pass DFT rules: 82
+Total registers that fail DFT rules: 0
+Total registers that are marked preserved or dont-scan: 0
+Total registers that are marked Abstract Segment dont-scan: 0
+Total registers that are part of shift register segments: 0
+Total registers that are lockup elements: 0
+Total registers that are level-sensitive: 0
+Total registers that are misc. non-scan: 0
+Total registers that pass dft rule checks and are not a part of scan chains: 0
+

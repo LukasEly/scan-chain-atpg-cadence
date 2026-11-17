@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626204450-921377000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626211717-119612000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:44:50 2026  -03
+            Date Started: Monday Nov 16 21:17:17 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775443.
+            This job is process number 1886929.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -20,7 +20,7 @@ INFO (TDA-009): Options/Values information.
             -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg
             -TESTMODE FULLSCAN
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626204450-921377000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626211717-119612000
             -STDOUT summary
             -reportscanchain all
 [end TDA_009]
@@ -409,7 +409,7 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
                       CPU Time =    0:00:00.00
                   Elapsed Time =    0:00:00.01                    [end TDA_001]
 
-     Date Ended:  Monday Nov 16 20:44:50 2026  -03
+     Date Ended:  Monday Nov 16 21:17:17 2026  -03
 
 INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
 

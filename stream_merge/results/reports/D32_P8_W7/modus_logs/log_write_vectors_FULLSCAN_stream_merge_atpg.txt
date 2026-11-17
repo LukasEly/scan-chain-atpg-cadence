@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626204501-210359000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626211723-432849000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:45:01 2026  -03
+            Date Started: Monday Nov 16 21:17:23 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775632.
+            This job is process number 1887306.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -INEXPERIMENT stream_merge_atpg
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626204501-210359000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626211723-432849000
             -STDOUT summary
             -scanformat parallel
           + -language verilog
@@ -107,10 +107,10 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 
                   Total Memory =            7,373,120  bytes
 
-                      CPU Time =    0:00:00.02
-                  Elapsed Time =    0:00:00.28                    [end TDA_001]
+                      CPU Time =    0:00:00.03
+                  Elapsed Time =    0:00:00.11                    [end TDA_001]
 
-     Date Ended:  Monday Nov 16 20:45:01 2026  -03
+     Date Ended:  Monday Nov 16 21:17:23 2026  -03
 
 INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
 INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 

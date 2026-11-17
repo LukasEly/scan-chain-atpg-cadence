@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626204448-499727000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626211715-737441000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:44:48 2026  -03
+            Date Started: Monday Nov 16 21:17:15 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775378.
+            This job is process number 1886877.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -ASSIGNFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/stream_merge.FULLSCAN.pinassign
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626204448-499727000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626211715-737441000
             -MODEDEF FULLSCAN
             -STDOUT summary
 [end TDA_009]
@@ -90,8 +90,8 @@ Test Function Pin Information for Test Mode:  FULLSCAN
 
 
             Cumulative Time in hours:minutes:seconds:
-                   CPU Time =   0:00:00.15
-               Elapsed Time =   0:00:00.99
+                   CPU Time =   0:00:00.12
+               Elapsed Time =   0:00:00.17
 
 
 

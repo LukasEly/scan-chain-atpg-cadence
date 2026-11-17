@@ -1,0 +1,4 @@
+TOOL:	xrun(64)	23.03-s003: Started on Nov 16, 2026 at 22:03:54 -03
+xrun(64): 23.03-s003: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+xrun: *E,FILEMIS: Cannot find the provided file outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.mainsim.v.
+TOOL:	xrun(64)	23.03-s003: Exiting on Nov 16, 2026 at 22:03:54 -03  (total: 00:00:00)

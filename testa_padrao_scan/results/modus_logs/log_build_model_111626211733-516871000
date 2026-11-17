@@ -1,0 +1,168 @@
+Starting Command: build_model 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -cell busca_padrao -designtop busca_padrao -allowmissingmodules no -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg -designsource /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/busca_padrao.test_netlist.v -messagecounteach 100 -stdout summary -techlib /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626211733-516871000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:17:33 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1888303.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg
+
+            -designtop busca_padrao
+            -TECHLIB /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626211733-516871000
+            -STDOUT summary
+            -messagecounteach 100
+            -DESIGNSOURCE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/busca_padrao.test_netlist.v
+          + -allowmissingmodules no
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "/home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/busca_padrao.test_netlist.v"
+Search Order  2:  "/soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v"
+Search Order  3:  "/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v"
+Search Order  4:  "/soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v"
+
+
+
+Reading Verilog data from /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/busca_padrao.test_netlist.v
+
+Verilog Parser complete - 1 modules, 3 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v
+
+Verilog Parser complete - 866 modules, 3531 gates, 6 user defined primitives.
+
+
+Reading Verilog data from /soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v
+
+Verilog Parser complete - 110 modules, 187 gates, 4 user defined primitives.
+
+
+Reading Verilog data from /soft64/design-kits/stm/65nm-cmos065_536/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z_7.0/behaviour/verilog/IO65LPHVT_SF_1V8_50A_7M4X0Y2Z.v
+
+Verilog Parser complete - 8 modules, 76 gates, 1 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+WARNING (TEI-110): Pin 'NOTI_REG' of 'cell CORE65GPSVT_U_FD_P_RN_NOTI' has no external net connection for any usage in the design. Cell contents file: '/soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v'.  [end TEI_110] 
+WARNING (TEI-110): Pin 'NOTI_REG' of 'cell CORE65GPSVT_U_FD_P_NOTI' has no external net connection for any usage in the design. Cell contents file: '/soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v'.  [end TEI_110] 
+
+
+Number of blocks in the hierarchical model is: 6,080.
+
+Number of technology library cell instances in the hierarchical model is: 796.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          6,080  Blocks                       2,935  Blocks
+         18,738  Pins                         2,935  Nodes
+         10,773  Nets
+
+Primary Inputs:                      Primary Outputs:
+         44  Input Only                        11  Output Only
+          0  Input/Output                       0  Input/Output
+         44  Total Inputs                      11  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        118  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        118  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+        218  MUX2s
+          0  Latches
+
+
+          1  Rising  Edge Flop
+        115  Rising  Edge Flop w/Reset Port
+        116  Total Flops
+
+        796  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 8 of 101 cells in this design.
+
+Optimization removed a total of 0 tied Latch Ports.
+Optimization removed a total of 0 non-controlling inputs.
+Optimization removed a total of 1,396 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          128,435,680  bytes
+
+                      CPU Time =    0:00:01.87
+                  Elapsed Time =    0:00:09.63                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-196): Build Model - Hierarchical Model Build starting:  
+      1 INFO (TEI-197): Build Model - Hierarchical Model Build completed.  
+      1 INFO (TEI-198): Build Model - Flat Model Build starting:  
+      1 INFO (TEI-199): Build Model - Flat Model Build completed.   
+      1 INFO (TEI-200): Build Model - Controller completed.  
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TLM-055): Design Summary
+
+  WARNING Messages...
+      2 WARNING (TEI-110): Pin 'NOTI_REG' of 'cell CORE65GPSVT_U_FD_P_RN_NOTI' has no external net connection for any usage in the design. Cell contents file: '/soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v'.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626204437-151977000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626211705-927738000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:44:37 2026  -03
+            Date Started: Monday Nov 16 21:17:05 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775131.
+            This job is process number 1886724.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
 
             -designtop stream_merge
             -TECHLIB /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626204437-151977000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626211705-927738000
             -STDOUT summary
             -messagecounteach 100
             -DESIGNSOURCE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/stream_merge.test_netlist.v
@@ -124,8 +124,8 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 
                   Total Memory =          115,192,944  bytes
 
-                      CPU Time =    0:00:01.39
-                  Elapsed Time =    0:00:09.73                    [end TDA_001]
+                      CPU Time =    0:00:01.40
+                  Elapsed Time =    0:00:08.65                    [end TDA_001]
 
 
 

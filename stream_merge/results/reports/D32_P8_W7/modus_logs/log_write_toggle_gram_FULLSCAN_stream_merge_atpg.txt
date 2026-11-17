@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626204459-768526000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626211722-263505000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:44:59 2026  -03
+            Date Started: Monday Nov 16 21:17:22 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775613.
+            This job is process number 1887187.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT stream_merge_atpg
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626204459-768526000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626211722-263505000
             -STDOUT summary
 [end TDA_009]
 INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
@@ -207,9 +207,9 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
                   Total Memory =            6,991,408  bytes
 
                       CPU Time =    0:00:00.00
-                  Elapsed Time =    0:00:00.05                    [end TDA_001]
+                  Elapsed Time =    0:00:00.04                    [end TDA_001]
 
-     Date Ended:  Monday Nov 16 20:44:59 2026  -03
+     Date Ended:  Monday Nov 16 21:17:22 2026  -03
 
 
 

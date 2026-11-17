@@ -1,0 +1,543 @@
+nohup: ignoring input
+Configurações: 8,8,7 16,8,7 32,8,7 64,8,7 32,2,7 32,4,7 32,16,7 32,32,7 32,8,1 32,8,3 32,8,15 32,8,31 
+==============================================================
+ stream_merge  D8_P8_W7   (Mon 16 Nov 21:09:29 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=8 DEPTH=8 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D8_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D8_P8_W7
+==============================================================
+ stream_merge  D16_P8_W7   (Mon 16 Nov 21:12:16 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=16 DEPTH=8 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D16_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 1)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7
+==============================================================
+ stream_merge  D32_P8_W7   (Mon 16 Nov 21:14:36 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7
+==============================================================
+ stream_merge  D64_P8_W7   (Mon 16 Nov 21:17:28 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=64 DEPTH=8 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D64_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D64_P8_W7
+==============================================================
+ stream_merge  D32_P2_W7   (Mon 16 Nov 21:21:00 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=2 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P2_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7
+==============================================================
+ stream_merge  D32_P4_W7   (Mon 16 Nov 21:23:42 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=4 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P4_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P4_W7
+==============================================================
+ stream_merge  D32_P16_W7   (Mon 16 Nov 21:27:37 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=16 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P16_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P16_W7
+==============================================================
+ stream_merge  D32_P32_W7   (Mon 16 Nov 21:30:51 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=32 WMAX=7 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P32_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P32_W7
+==============================================================
+ stream_merge  D32_P8_W1   (Mon 16 Nov 21:34:38 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=1 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W1 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W1
+==============================================================
+ stream_merge  D32_P8_W3   (Mon 16 Nov 21:37:31 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=3 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W3 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W3
+==============================================================
+ stream_merge  D32_P8_W15   (Mon 16 Nov 21:40:23 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=15 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W15 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W15
+==============================================================
+ stream_merge  D32_P8_W31   (Mon 16 Nov 21:43:17 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=31 NCHAINS=1 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W31 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W31
+==============================================================
+ stream_merge  D32_P8_W7_C2   (Mon 16 Nov 21:46:10 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=7 NCHAINS=2 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 134)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C2
+==============================================================
+ stream_merge  D32_P8_W7_C4   (Mon 16 Nov 21:47:28 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=7 NCHAINS=4 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 0)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C4
+==============================================================
+ stream_merge  D32_P8_W7_C8   (Mon 16 Nov 21:50:21 -03 2026)
+==============================================================
+########## stream_merge: DATA_W=32 DEPTH=8 WMAX=7 NCHAINS=8 ##########
+@file(run_genus.tcl) 50: syn_generic
+@file(run_genus.tcl) 51: syn_map
+Incremental optimization status
+UM:*                                                                   syn_map
+@file(run_genus.tcl) 52: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt
+       : Info=6, Warn=2, Error=0, Fatal=0
+@file(dft_setup.tcl) 46: puts "################ Incremental Synthesis (Post DfT) #############"
+################ Incremental Synthesis (Post DfT) #############
+@file(dft_setup.tcl) 47: syn_opt -incremental
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'stream_merge' using 'high' effort.
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+Incremental optimization status
+| SYNTH-7 |Info    |    1 |Incrementally optimizing.                           |
+UM:*                                                                   syn_opt_incr
+       : Info=6, Warn=2, Error=0, Fatal=0
+########## GENUS OK: D32_P8_W7 ##########
+[ok] Genus
+[ok] Modus (status 134)
+[ok] Simulação (veja logs/sim_stdout.log)
+Resultados em /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8
+15 rodadas -> /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/results/results.csv
+  D16_P8_W7        flops=  170 area +16.75%  TCov=? testes=? sim_err=1
+  D32_P16_W7       flops=  581 area +17.85%  TCov=100.0 testes=81 sim_err=3
+  D32_P2_W7        flops=   82 area +13.38%  TCov=100.0 testes=27 sim_err=3
+  D32_P32_W7       flops= 1144 area +18.35%  TCov=100.0 testes=141 sim_err=3
+  D32_P4_W7        flops=  155 area +15.21%  TCov=100.0 testes=35 sim_err=3
+  D32_P8_W1        flops=  294 area +17.19%  TCov=100.0 testes=45 sim_err=3
+  D32_P8_W15       flops=  300 area +16.95%  TCov=100.0 testes=46 sim_err=3
+  D32_P8_W3        flops=  296 area +17.05%  TCov=99.97 testes=48 sim_err=3
+  D32_P8_W31       flops=  302 area +16.84%  TCov=100.0 testes=54 sim_err=3
+  D32_P8_W7        flops=  298 area +16.93%  TCov=100.0 testes=52 sim_err=3
+  D32_P8_W7_C2     flops=  298 area +16.93%  TCov=? testes=? sim_err=1
+  D32_P8_W7_C4     flops=  298 area +16.93%  TCov=100.0 testes=52 sim_err=3
+  D32_P8_W7_C8     flops=  298 area +16.93%  TCov=100.0 testes=52 sim_err=3
+  D64_P8_W7        flops=  554 area +17.35%  TCov=100.0 testes=45 sim_err=3
+  D8_P8_W7         flops=  106 area +15.2%  TCov=100.0 testes=47 sim_err=3

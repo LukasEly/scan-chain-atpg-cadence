@@ -10,7 +10,7 @@ Type 'help legal_notices' for third party license notices.
 
 Version : 21.10-p003_1, built Aug 24 2021 (linux26_64)
 Options : -file outputs/dft/modus_atpg/runmodus.atpg.tcl
-Date    : Mon, November 16 20:44:32 2026
+Date    : Mon, November 16 21:17:01 2026
 Host    : paxos.inf.pucrs.br (x86_64 Linux 4.18.0-553.155.1.el8_10.x86_64) (14*Intel(R) Core(TM) i9-7940X CPU @ 3.10GHz 19712KB)
 OS      : Rocky Linux release 8.10 (Green Obsidian)
 
@@ -139,7 +139,7 @@ INFO (TDA-009): Options/Values information.
 
             -designtop stream_merge
             -TECHLIB /soft64/design-kits/stm/65nm-cmos065_536/CORE65GPSVT_5.1/behaviour/verilog/CORE65GPSVT.v,/soft64/design-kits/stm/65nm-cmos065_536/CLOCK65GPSVT_3.1/behaviour/verilog/CLOCK65GPSVT.v
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626204437-151977000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_model_111626211705-927738000
             -STDOUT summary
             -messagecounteach 100
             -DESIGNSOURCE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/stream_merge.test_netlist.v
@@ -189,7 +189,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -ASSIGNFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/stream_merge.FULLSCAN.pinassign
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626204448-499727000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_testmode_FULLSCAN_111626211715-737441000
             -MODEDEF FULLSCAN
             -STDOUT summary
 [end TDA_009]
@@ -231,7 +231,7 @@ INFO (TDA-009): Options/Values information.
             -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg
             -TESTMODE FULLSCAN
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626204450-921377000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626211717-119612000
             -STDOUT summary
             -reportscanchain all
 [end TDA_009]
@@ -270,7 +270,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -messagecount TSV-016=10,TSV-024=10,TSV-315=10,TSV-027=10
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_verify_test_structures_FULLSCAN_111626204452-726443000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_verify_test_structures_FULLSCAN_111626211718-291109000
             -STDOUT summary
 [end TDA_009]
 
@@ -291,7 +291,7 @@ INFO (TDA-009): Options/Values information.
       1 INFO (TSV-568): There are 1 observable scan chains feeding to Scan Out (SO) primary outputs.    
       1 INFO (TSV-569): There are 0 controllable scan chains fed by on-product Pattern Generator(s).    
       1 INFO (TSV-570): There are 0 observable scan chains feeding to on-product Multiple-Input Signature Register (MISRs).    
-      1 INFO (TSV-900): verify_test_structures processing has started Mon Nov 16 20:44:52 2026     
+      1 INFO (TSV-900): verify_test_structures processing has started Mon Nov 16 21:17:18 2026     
       1 INFO (TSV-908): verify_test_structures processing complete.    
 
  For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
@@ -315,7 +315,7 @@ INFO (TDA-009): Options/Values information.
 
             -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_faultmodel_111626204454-368544000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_build_faultmodel_111626211719-543884000
             -STDOUT summary
             -includedynamic no
 [end TDA_009]
@@ -359,19 +359,19 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT stream_merge_atpg
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626204457-871993000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626211720-835738000
             -STDOUT summary
 [end TDA_009]
 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
 INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
-INFO (TDA-220):      1       1       2093    32.03%   32.03%         4441           00:00.18    [end TDA_220] 
+INFO (TDA-220):      1       1       2093    32.03%   32.03%         4441           00:00.10    [end TDA_220] 
 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
 INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
-INFO (TDA-220):     16      16       1958    62.00%   62.00%         2483           00:00.39    [end TDA_220] 
-INFO (TDA-220):     32      32       2278    96.86%   96.86%          205           00:00.40    [end TDA_220] 
-INFO (TDA-220):     36      36        149    99.14%   99.14%           56           00:00.40    [end TDA_220] 
-INFO (TDA-220):     50      50         55    99.98%   99.98%            1           00:00.40    [end TDA_220] 
-INFO (TDA-220):     51      51          1    99.99%   99.99%            0           00:00.41    [end TDA_220] 
+INFO (TDA-220):     16      16       1958    62.00%   62.00%         2483           00:00.28    [end TDA_220] 
+INFO (TDA-220):     32      32       2278    96.86%   96.86%          205           00:00.28    [end TDA_220] 
+INFO (TDA-220):     36      36        149    99.14%   99.14%           56           00:00.29    [end TDA_220] 
+INFO (TDA-220):     50      50         55    99.98%   99.98%            1           00:00.29    [end TDA_220] 
+INFO (TDA-220):     51      51          1    99.99%   99.99%            0           00:00.29    [end TDA_220] 
 
 
 -------------------------------------------------------------------------------
@@ -408,7 +408,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT stream_merge_atpg
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626204459-768526000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_toggle_gram_FULLSCAN_stream_merge_atpg_111626211722-263505000
             -STDOUT summary
 [end TDA_009]
 
@@ -448,7 +448,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -INEXPERIMENT stream_merge_atpg
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626204501-210359000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626211723-432849000
             -STDOUT summary
             -scanformat parallel
           + -language verilog
@@ -495,7 +495,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
 
             -INEXPERIMENT stream_merge_atpg
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_commit_tests_FULLSCAN_stream_merge_atpg_111626204502-795506000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_commit_tests_FULLSCAN_stream_merge_atpg_111626211724-665754000
             -STDOUT summary
 [end TDA_009]
 

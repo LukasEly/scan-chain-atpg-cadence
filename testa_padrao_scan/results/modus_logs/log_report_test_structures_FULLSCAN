@@ -1,0 +1,269 @@
+Starting Command: report_test_structures 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_test_structures -reportscanchain all -testmode FULLSCAN -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626211745-841790000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:17:45 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1888870.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/testa_padrao_scan/synthesis/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626211745-841790000
+            -STDOUT summary
+            -reportscanchain all
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          6,080  Blocks                       2,935  Blocks
+         18,738  Pins                         2,935  Nodes
+         10,773  Nets
+
+Primary Inputs:                      Primary Outputs:
+         44  Input Only                        11  Output Only
+          0  Input/Output                       0  Input/Output
+         44  Total Inputs                      11  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+        118  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+        118  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+        218  MUX2s
+          0  Latches
+
+
+          1  Rising  Edge Flop
+        115  Rising  Edge Flop w/Reset Port
+        116  Total Flops
+
+        796  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+
+
+Control/Observe Chain Information for Test Mode:  FULLSCAN
+-----------------------------------------------
+
+     2 Control Chains (0 Control Only)
+     2 Observe Chains (0 Observe Only)
+     2 Chains are Control and Observe
+
+  Longest Scan Chain: 100 bits
+  Average Scan Chain Length: 58 bits
+
+
+  Control Chain: 1
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          42/port:chip_sdi_1    Pipeline Stages: 0 
+    Load Point Pin Index/Name  42/port:chip_sdi_1
+    Length: 16
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 1
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          52/port:chip_sdo_1    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  52/port:chip_sdo_1
+    Unload Point Inverted from Load Point
+    Length: 16
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1   rDFF_c          125        +-           1          16  inst:address_reg_0
+           2   rDFF_c          157        -+           1          15  inst:address_reg_1
+           3   rDFF_c          189        +-           1          14  inst:address_reg_2
+           4   rDFF_c          221        -+           1          13  inst:address_reg_3
+           5   rDFF_c          253        +-           1          12  inst:address_reg_4
+           6   rDFF_c          285        -+           1          11  inst:address_reg_5
+           7   rDFF_c          317        +-           1          10  inst:address_reg_6
+           8   rDFF_c          349        +-           1           9  inst:address_reg_7
+           9   rDFF_c          381        -+           1           8  inst:endx_reg_0
+          10   rDFF_c          411        -+           1           7  inst:endx_reg_1
+          11   rDFF_c          460        -+           1           6  inst:endx_reg_2
+          12   rDFF_c          509        -+           1           5  inst:endx_reg_3
+          13   rDFF_c          558        -+           1           4  inst:endy_reg_0
+          14   rDFF_c          590        -+           1           3  inst:endy_reg_1
+          15   rDFF_c          622        -+           1           2  inst:endy_reg_2
+          16   rDFF_c          654        -+           1           1  inst:endy_reg_3
+
+
+  Control Chain: 2
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          43/port:chip_sdi_2    Pipeline Stages: 0 
+    Load Point Pin Index/Name  43/port:chip_sdi_2
+    Length: 100
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 2
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          53/port:chip_sdo_2    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  53/port:chip_sdo_2
+    Unload Point In Phase with Load Point
+    Length: 100
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1   rDFF_c            1        ++           2         100  inst:EA_reg_0
+           2   rDFF_c           31        ++           2          99  inst:EA_reg_1
+           3   rDFF_c           61        ++           2          98  inst:EA_reg_2
+           4   rDFF_c           91        ++           2          97  inst:EA_reg_3
+           5   rDFF_c         2886        ++           2          96  inst:reseta_bit_slv_reg0_reg
+           6   rDFF_c         2916        ++           2          95  inst:slv_reg_reg_0_0
+           7   rDFF_c         2948        ++           2          94  inst:slv_reg_reg_0_1
+           8   rDFF_c         2980        ++           2          93  inst:slv_reg_reg_0_2
+           9   rDFF_c         3012        ++           2          92  inst:slv_reg_reg_0_3
+          10   rDFF_c         3044        ++           2          91  inst:slv_reg_reg_0_4
+          11   rDFF_c         3076        ++           2          90  inst:slv_reg_reg_0_5
+          12   rDFF_c         3108        ++           2          89  inst:slv_reg_reg_0_6
+          13   rDFF_c         3140        ++           2          88  inst:slv_reg_reg_0_7
+          14   rDFF_c         3844        ++           2          87  inst:slv_reg_reg_1_0
+          15   rDFF_c         3876        ++           2          86  inst:slv_reg_reg_1_1
+          16   rDFF_c         3908        ++           2          85  inst:slv_reg_reg_1_2
+          17   rDFF_c         3940        ++           2          84  inst:slv_reg_reg_1_3
+          18   rDFF_c         3972        ++           2          83  inst:slv_reg_reg_1_4
+          19   rDFF_c         4004        ++           2          82  inst:slv_reg_reg_1_5
+          20   rDFF_c         4036        ++           2          81  inst:slv_reg_reg_1_6
+          21   rDFF_c         4068        ++           2          80  inst:slv_reg_reg_1_7
+          22   rDFF_c         4100        ++           2          79  inst:slv_reg_reg_2_0
+          23   rDFF_c         4132        ++           2          78  inst:slv_reg_reg_2_1
+          24   rDFF_c         4164        ++           2          77  inst:slv_reg_reg_2_2
+          25   rDFF_c         4196        ++           2          76  inst:slv_reg_reg_2_3
+          26   rDFF_c         4228        ++           2          75  inst:slv_reg_reg_2_4
+          27   rDFF_c         4260        ++           2          74  inst:slv_reg_reg_2_5
+          28   rDFF_c         4292        ++           2          73  inst:slv_reg_reg_2_6
+          29   rDFF_c         4324        ++           2          72  inst:slv_reg_reg_2_7
+          30   rDFF_c         4356        ++           2          71  inst:slv_reg_reg_3_0
+          31   rDFF_c         4388        ++           2          70  inst:slv_reg_reg_3_1
+          32   rDFF_c         4420        ++           2          69  inst:slv_reg_reg_3_2
+          33   rDFF_c         4452        ++           2          68  inst:slv_reg_reg_3_3
+          34   rDFF_c         4484        ++           2          67  inst:slv_reg_reg_3_4
+          35   rDFF_c         4516        ++           2          66  inst:slv_reg_reg_3_5
+          36   rDFF_c         4548        ++           2          65  inst:slv_reg_reg_3_6
+          37   rDFF_c         4580        ++           2          64  inst:slv_reg_reg_3_7
+          38   rDFF_c         4612        ++           2          63  inst:slv_reg_reg_4_0
+          39   rDFF_c         4644        ++           2          62  inst:slv_reg_reg_4_1
+          40   rDFF_c         4676        ++           2          61  inst:slv_reg_reg_4_2
+          41   rDFF_c         4708        ++           2          60  inst:slv_reg_reg_4_3
+          42   rDFF_c         4740        ++           2          59  inst:slv_reg_reg_4_4
+          43   rDFF_c         4772        ++           2          58  inst:slv_reg_reg_4_5
+          44   rDFF_c         4804        ++           2          57  inst:slv_reg_reg_4_6
+          45   rDFF_c         4836        ++           2          56  inst:slv_reg_reg_4_7
+          46   rDFF_c         4868        ++           2          55  inst:slv_reg_reg_5_0
+          47   rDFF_c         4900        ++           2          54  inst:slv_reg_reg_5_1
+          48   rDFF_c         4932        ++           2          53  inst:slv_reg_reg_5_2
+          49   rDFF_c         4964        ++           2          52  inst:slv_reg_reg_5_3
+          50   rDFF_c         4996        ++           2          51  inst:slv_reg_reg_5_4
+          51   rDFF_c         5028        ++           2          50  inst:slv_reg_reg_5_5
+          52   rDFF_c         5060        ++           2          49  inst:slv_reg_reg_5_6
+          53   rDFF_c         5092        ++           2          48  inst:slv_reg_reg_5_7
+          54   rDFF_c         5124        ++           2          47  inst:slv_reg_reg_6_0
+          55   rDFF_c         5156        ++           2          46  inst:slv_reg_reg_6_1
+          56   rDFF_c         5188        ++           2          45  inst:slv_reg_reg_6_2
+          57   rDFF_c         5220        ++           2          44  inst:slv_reg_reg_6_3
+          58   rDFF_c         5252        ++           2          43  inst:slv_reg_reg_6_4
+          59   rDFF_c         5284        ++           2          42  inst:slv_reg_reg_6_5
+          60   rDFF_c         5316        ++           2          41  inst:slv_reg_reg_6_6
+          61   rDFF_c         5348        ++           2          40  inst:slv_reg_reg_6_7
+          62   rDFF_c         5380        ++           2          39  inst:slv_reg_reg_7_0
+          63   rDFF_c         5412        ++           2          38  inst:slv_reg_reg_7_1
+          64   rDFF_c         5444        ++           2          37  inst:slv_reg_reg_7_2
+          65   rDFF_c         5476        ++           2          36  inst:slv_reg_reg_7_3
+          66   rDFF_c         5508        ++           2          35  inst:slv_reg_reg_7_4
+          67   rDFF_c         5540        ++           2          34  inst:slv_reg_reg_7_5
+          68   rDFF_c         5572        ++           2          33  inst:slv_reg_reg_7_6
+          69   rDFF_c         5604        ++           2          32  inst:slv_reg_reg_7_7
+          70   rDFF_c         5636        ++           2          31  inst:slv_reg_reg_8_0
+          71   rDFF_c         5685        ++           2          30  inst:slv_reg_reg_8_1
+          72   rDFF_c         5734        ++           2          29  inst:slv_reg_reg_8_2
+          73   rDFF_c         5783        ++           2          28  inst:slv_reg_reg_8_3
+          74   rDFF_c         5832        ++           2          27  inst:slv_reg_reg_8_4
+          75   rDFF_c         5881        ++           2          26  inst:slv_reg_reg_8_5
+          76   rDFF_c         5930        ++           2          25  inst:slv_reg_reg_8_6
+          77   rDFF_c         5979        ++           2          24  inst:slv_reg_reg_8_7
+          78   rDFF_c         6028        ++           2          23  inst:slv_reg_reg_9_0
+          79   rDFF_c         3172        ++           2          22  inst:slv_reg_reg_10_0
+          80   rDFF_c         3204        ++           2          21  inst:slv_reg_reg_10_1
+          81   rDFF_c         3236        ++           2          20  inst:slv_reg_reg_10_2
+          82   rDFF_c         3268        ++           2          19  inst:slv_reg_reg_10_3
+          83   rDFF_c         3300        ++           2          18  inst:slv_reg_reg_10_4
+          84   rDFF_c         3332        ++           2          17  inst:slv_reg_reg_11_0
+          85   rDFF_c         3364        ++           2          16  inst:slv_reg_reg_11_1
+          86   rDFF_c         3396        ++           2          15  inst:slv_reg_reg_11_2
+          87   rDFF_c         3428        ++           2          14  inst:slv_reg_reg_11_3
+          88   rDFF_c         3460        ++           2          13  inst:slv_reg_reg_12_0
+          89   rDFF_c         3492        ++           2          12  inst:slv_reg_reg_12_1
+          90   rDFF_c         3524        ++           2          11  inst:slv_reg_reg_12_2
+          91   rDFF_c         3556        ++           2          10  inst:slv_reg_reg_12_3
+          92   rDFF_c         3588        ++           2           9  inst:slv_reg_reg_13_0
+          93   rDFF_c         3620        ++           2           8  inst:slv_reg_reg_13_1
+          94   rDFF_c         3652        ++           2           7  inst:slv_reg_reg_13_2
+          95   rDFF_c         3684        ++           2           6  inst:slv_reg_reg_13_3
+          96   rDFF_c         3716        ++           2           5  inst:slv_reg_reg_14_0
+          97   rDFF_c         3748        ++           2           4  inst:slv_reg_reg_14_1
+          98   rDFF_c         3780        ++           2           3  inst:slv_reg_reg_14_2
+          99   rDFF_c         3812        ++           2           2  inst:slv_reg_reg_14_3
+         100     rDFF         6060        ++           2           1  inst:user_int_reg
+
+
+Report completed.
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,521,920  bytes
+
+                      CPU Time =    0:00:00.01
+                  Elapsed Time =    0:00:00.02                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:17:45 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

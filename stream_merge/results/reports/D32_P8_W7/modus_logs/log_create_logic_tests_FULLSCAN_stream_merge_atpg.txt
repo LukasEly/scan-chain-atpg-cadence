@@ -5,12 +5,12 @@ INFO (TDA-005): Command Line Invocation:
 
 INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
 
-INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626204457-871993000 [end TDA_015]
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626211720-835738000 [end TDA_015]
 
 INFO (TDA-007): Job Information:
-            Date Started: Monday Nov 16 20:44:57 2026  -03
+            Date Started: Monday Nov 16 21:17:20 2026  -03
             Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
-            This job is process number 1775583.
+            This job is process number 1887126.
 [end TDA_007]
 
 INFO (TDA-009): Options/Values information.
@@ -21,7 +21,7 @@ INFO (TDA-009): Options/Values information.
             -TESTMODE FULLSCAN
             -EXPERIMENT stream_merge_atpg
 
-            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626204457-871993000
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_create_logic_tests_FULLSCAN_stream_merge_atpg_111626211720-835738000
             -STDOUT summary
 [end TDA_009]
 
@@ -55,7 +55,7 @@ INFO (TTC-110): Starting Scan Test generation                                   
 
 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
 INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
-INFO (TDA-220):      1       1       2093    32.03%   32.03%         4441           00:00.18    [end TDA_220] 
+INFO (TDA-220):      1       1       2093    32.03%   32.03%         4441           00:00.10    [end TDA_220] 
 INFO (TTC-110): Ending Scan Test generation                                                     [end TTC_110] 
 *************************************************************************************************************
 
@@ -64,11 +64,11 @@ INFO (TTC-110): Starting Static Logic Test generation                           
 
 INFO (TDA-220):   --- Tests ---   Faults     ---- ATCov ----   -- Faults --   - Elapsed Time -  [end TDA_220] 
 INFO (TDA-220):    Sim.    Eff.  Detected    Tmode    Global     Untested                       [end TDA_220] 
-INFO (TDA-220):     16      16       1958    62.00%   62.00%         2483           00:00.39    [end TDA_220] 
-INFO (TDA-220):     32      32       2278    96.86%   96.86%          205           00:00.40    [end TDA_220] 
-INFO (TDA-220):     36      36        149    99.14%   99.14%           56           00:00.40    [end TDA_220] 
-INFO (TDA-220):     50      50         55    99.98%   99.98%            1           00:00.40    [end TDA_220] 
-INFO (TDA-220):     51      51          1    99.99%   99.99%            0           00:00.41    [end TDA_220] 
+INFO (TDA-220):     16      16       1958    62.00%   62.00%         2483           00:00.28    [end TDA_220] 
+INFO (TDA-220):     32      32       2278    96.86%   96.86%          205           00:00.28    [end TDA_220] 
+INFO (TDA-220):     36      36        149    99.14%   99.14%           56           00:00.29    [end TDA_220] 
+INFO (TDA-220):     50      50         55    99.98%   99.98%            1           00:00.29    [end TDA_220] 
+INFO (TDA-220):     51      51          1    99.99%   99.99%            0           00:00.29    [end TDA_220] 
 INFO (TTC-110): Ending Static Logic Test generation - processing limit reached                  [end TTC_110] 
 *************************************************************************************************************
 
@@ -103,10 +103,10 @@ INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:
 
                   Total Memory =            7,791,264  bytes
 
-                      CPU Time =    0:00:00.18
-                  Elapsed Time =    0:00:00.42                    [end TDA_001]
+                      CPU Time =    0:00:00.19
+                  Elapsed Time =    0:00:00.31                    [end TDA_001]
 
-     Date Ended:  Monday Nov 16 20:44:58 2026  -03
+     Date Ended:  Monday Nov 16 21:17:21 2026  -03
 
 INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
 

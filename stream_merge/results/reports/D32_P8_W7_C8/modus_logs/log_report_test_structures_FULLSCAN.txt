@@ -1,0 +1,564 @@
+Starting Command: report_test_structures 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_test_structures -reportscanchain all -testmode FULLSCAN -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626215303-285533000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:53:03 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1943833.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P8_W7_C8/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626215303-285533000
+            -STDOUT summary
+            -reportscanchain all
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          9,509  Blocks                       2,913  Blocks
+         28,938  Pins                         2,913  Nodes
+         16,990  Nets
+
+Primary Inputs:                      Primary Outputs:
+         93  Input Only                        53  Output Only
+          0  Input/Output                       0  Input/Output
+         93  Total Inputs                      53  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+          0  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+          0  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+        627  MUX2s
+          0  Latches
+
+
+        298  Rising  Edge Flop
+        298  Total Flops
+
+        590  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+
+
+Control/Observe Chain Information for Test Mode:  FULLSCAN
+-----------------------------------------------
+
+     8 Control Chains (0 Control Only)
+     8 Observe Chains (0 Observe Only)
+     8 Chains are Control and Observe
+
+  Longest Scan Chain: 38 bits
+  Average Scan Chain Length: 38 bits
+
+
+  Control Chain: 1
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          12/port:chip_sdi_1    Pipeline Stages: 0 
+    Load Point Pin Index/Name  12/port:chip_sdi_1
+    Length: 38
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 1
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          94/port:chip_sdo_1    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  94/port:chip_sdo_1
+    Unload Point In Phase with Load Point
+    Length: 38
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF            1        ++           1          38  inst:credit0_reg_0
+           2     rDFF           21        ++           1          37  inst:credit0_reg_1
+           3     rDFF           41        ++           1          36  inst:credit0_reg_2
+           4     rDFF           61        ++           1          35  inst:credit1_reg_0
+           5     rDFF           81        ++           1          34  inst:credit1_reg_1
+           6     rDFF          101        ++           1          33  inst:credit1_reg_2
+           7     rDFF         1149        ++           1          32  inst:lock_src_reg
+           8     rDFF         1169        ++           1          31  inst:locked_reg
+           9     rDFF         1189        ++           1          30  inst:mem_data_reg_0_0
+          10     rDFF         1218        ++           1          29  inst:mem_data_reg_0_1
+          11     rDFF         1537        ++           1          28  inst:mem_data_reg_0_2
+          12     rDFF         1856        ++           1          27  inst:mem_data_reg_0_3
+          13     rDFF         1943        ++           1          26  inst:mem_data_reg_0_4
+          14     rDFF         1972        ++           1          25  inst:mem_data_reg_0_5
+          15     rDFF         2001        ++           1          24  inst:mem_data_reg_0_6
+          16     rDFF         2030        ++           1          23  inst:mem_data_reg_0_7
+          17     rDFF         2059        ++           1          22  inst:mem_data_reg_0_8
+          18     rDFF         2088        ++           1          21  inst:mem_data_reg_0_9
+          19     rDFF         1247        ++           1          20  inst:mem_data_reg_0_10
+          20     rDFF         1276        ++           1          19  inst:mem_data_reg_0_11
+          21     rDFF         1305        ++           1          18  inst:mem_data_reg_0_12
+          22     rDFF         1334        ++           1          17  inst:mem_data_reg_0_13
+          23     rDFF         1363        ++           1          16  inst:mem_data_reg_0_14
+          24     rDFF         1392        ++           1          15  inst:mem_data_reg_0_15
+          25     rDFF         1421        ++           1          14  inst:mem_data_reg_0_16
+          26     rDFF         1450        ++           1          13  inst:mem_data_reg_0_17
+          27     rDFF         1479        ++           1          12  inst:mem_data_reg_0_18
+          28     rDFF         1508        ++           1          11  inst:mem_data_reg_0_19
+          29     rDFF         1566        ++           1          10  inst:mem_data_reg_0_20
+          30     rDFF         1595        ++           1           9  inst:mem_data_reg_0_21
+          31     rDFF         1624        ++           1           8  inst:mem_data_reg_0_22
+          32     rDFF         1653        ++           1           7  inst:mem_data_reg_0_23
+          33     rDFF         1682        ++           1           6  inst:mem_data_reg_0_24
+          34     rDFF         1711        ++           1           5  inst:mem_data_reg_0_25
+          35     rDFF         1740        ++           1           4  inst:mem_data_reg_0_26
+          36     rDFF         1769        ++           1           3  inst:mem_data_reg_0_27
+          37     rDFF         1798        ++           1           2  inst:mem_data_reg_0_28
+          38     rDFF         1827        ++           1           1  inst:mem_data_reg_0_29
+
+
+  Control Chain: 2
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          13/port:chip_sdi_2    Pipeline Stages: 0 
+    Load Point Pin Index/Name  13/port:chip_sdi_2
+    Length: 38
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 2
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          95/port:chip_sdo_2    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  95/port:chip_sdo_2
+    Unload Point In Phase with Load Point
+    Length: 38
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         1885        ++           2          38  inst:mem_data_reg_0_30
+           2     rDFF         1914        ++           2          37  inst:mem_data_reg_0_31
+           3     rDFF         2117        ++           2          36  inst:mem_data_reg_1_0
+           4     rDFF         2146        ++           2          35  inst:mem_data_reg_1_1
+           5     rDFF         2465        ++           2          34  inst:mem_data_reg_1_2
+           6     rDFF         2784        ++           2          33  inst:mem_data_reg_1_3
+           7     rDFF         2871        ++           2          32  inst:mem_data_reg_1_4
+           8     rDFF         2900        ++           2          31  inst:mem_data_reg_1_5
+           9     rDFF         2929        ++           2          30  inst:mem_data_reg_1_6
+          10     rDFF         2958        ++           2          29  inst:mem_data_reg_1_7
+          11     rDFF         2987        ++           2          28  inst:mem_data_reg_1_8
+          12     rDFF         3016        ++           2          27  inst:mem_data_reg_1_9
+          13     rDFF         2175        ++           2          26  inst:mem_data_reg_1_10
+          14     rDFF         2204        ++           2          25  inst:mem_data_reg_1_11
+          15     rDFF         2233        ++           2          24  inst:mem_data_reg_1_12
+          16     rDFF         2262        ++           2          23  inst:mem_data_reg_1_13
+          17     rDFF         2291        ++           2          22  inst:mem_data_reg_1_14
+          18     rDFF         2320        ++           2          21  inst:mem_data_reg_1_15
+          19     rDFF         2349        ++           2          20  inst:mem_data_reg_1_16
+          20     rDFF         2378        ++           2          19  inst:mem_data_reg_1_17
+          21     rDFF         2407        ++           2          18  inst:mem_data_reg_1_18
+          22     rDFF         2436        ++           2          17  inst:mem_data_reg_1_19
+          23     rDFF         2494        ++           2          16  inst:mem_data_reg_1_20
+          24     rDFF         2523        ++           2          15  inst:mem_data_reg_1_21
+          25     rDFF         2552        ++           2          14  inst:mem_data_reg_1_22
+          26     rDFF         2581        ++           2          13  inst:mem_data_reg_1_23
+          27     rDFF         2610        ++           2          12  inst:mem_data_reg_1_24
+          28     rDFF         2639        ++           2          11  inst:mem_data_reg_1_25
+          29     rDFF         2668        ++           2          10  inst:mem_data_reg_1_26
+          30     rDFF         2697        ++           2           9  inst:mem_data_reg_1_27
+          31     rDFF         2726        ++           2           8  inst:mem_data_reg_1_28
+          32     rDFF         2755        ++           2           7  inst:mem_data_reg_1_29
+          33     rDFF         2813        ++           2           6  inst:mem_data_reg_1_30
+          34     rDFF         2842        ++           2           5  inst:mem_data_reg_1_31
+          35     rDFF         3045        ++           2           4  inst:mem_data_reg_2_0
+          36     rDFF         3074        ++           2           3  inst:mem_data_reg_2_1
+          37     rDFF         3393        ++           2           2  inst:mem_data_reg_2_2
+          38     rDFF         3712        ++           2           1  inst:mem_data_reg_2_3
+
+
+  Control Chain: 3
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          14/port:chip_sdi_3    Pipeline Stages: 0 
+    Load Point Pin Index/Name  14/port:chip_sdi_3
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 3
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          96/port:chip_sdo_3    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  96/port:chip_sdo_3
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         3799        ++           3          37  inst:mem_data_reg_2_4
+           2     rDFF         3828        ++           3          36  inst:mem_data_reg_2_5
+           3     rDFF         3857        ++           3          35  inst:mem_data_reg_2_6
+           4     rDFF         3886        ++           3          34  inst:mem_data_reg_2_7
+           5     rDFF         3915        ++           3          33  inst:mem_data_reg_2_8
+           6     rDFF         3944        ++           3          32  inst:mem_data_reg_2_9
+           7     rDFF         3103        ++           3          31  inst:mem_data_reg_2_10
+           8     rDFF         3132        ++           3          30  inst:mem_data_reg_2_11
+           9     rDFF         3161        ++           3          29  inst:mem_data_reg_2_12
+          10     rDFF         3190        ++           3          28  inst:mem_data_reg_2_13
+          11     rDFF         3219        ++           3          27  inst:mem_data_reg_2_14
+          12     rDFF         3248        ++           3          26  inst:mem_data_reg_2_15
+          13     rDFF         3277        ++           3          25  inst:mem_data_reg_2_16
+          14     rDFF         3306        ++           3          24  inst:mem_data_reg_2_17
+          15     rDFF         3335        ++           3          23  inst:mem_data_reg_2_18
+          16     rDFF         3364        ++           3          22  inst:mem_data_reg_2_19
+          17     rDFF         3422        ++           3          21  inst:mem_data_reg_2_20
+          18     rDFF         3451        ++           3          20  inst:mem_data_reg_2_21
+          19     rDFF         3480        ++           3          19  inst:mem_data_reg_2_22
+          20     rDFF         3509        ++           3          18  inst:mem_data_reg_2_23
+          21     rDFF         3538        ++           3          17  inst:mem_data_reg_2_24
+          22     rDFF         3567        ++           3          16  inst:mem_data_reg_2_25
+          23     rDFF         3596        ++           3          15  inst:mem_data_reg_2_26
+          24     rDFF         3625        ++           3          14  inst:mem_data_reg_2_27
+          25     rDFF         3654        ++           3          13  inst:mem_data_reg_2_28
+          26     rDFF         3683        ++           3          12  inst:mem_data_reg_2_29
+          27     rDFF         3741        ++           3          11  inst:mem_data_reg_2_30
+          28     rDFF         3770        ++           3          10  inst:mem_data_reg_2_31
+          29     rDFF         3973        ++           3           9  inst:mem_data_reg_3_0
+          30     rDFF         4002        ++           3           8  inst:mem_data_reg_3_1
+          31     rDFF         4321        ++           3           7  inst:mem_data_reg_3_2
+          32     rDFF         4640        ++           3           6  inst:mem_data_reg_3_3
+          33     rDFF         4727        ++           3           5  inst:mem_data_reg_3_4
+          34     rDFF         4756        ++           3           4  inst:mem_data_reg_3_5
+          35     rDFF         4785        ++           3           3  inst:mem_data_reg_3_6
+          36     rDFF         4814        ++           3           2  inst:mem_data_reg_3_7
+          37     rDFF         4843        ++           3           1  inst:mem_data_reg_3_8
+
+
+  Control Chain: 4
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          15/port:chip_sdi_4    Pipeline Stages: 0 
+    Load Point Pin Index/Name  15/port:chip_sdi_4
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 4
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          97/port:chip_sdo_4    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  97/port:chip_sdo_4
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         4872        ++           4          37  inst:mem_data_reg_3_9
+           2     rDFF         4031        ++           4          36  inst:mem_data_reg_3_10
+           3     rDFF         4060        ++           4          35  inst:mem_data_reg_3_11
+           4     rDFF         4089        ++           4          34  inst:mem_data_reg_3_12
+           5     rDFF         4118        ++           4          33  inst:mem_data_reg_3_13
+           6     rDFF         4147        ++           4          32  inst:mem_data_reg_3_14
+           7     rDFF         4176        ++           4          31  inst:mem_data_reg_3_15
+           8     rDFF         4205        ++           4          30  inst:mem_data_reg_3_16
+           9     rDFF         4234        ++           4          29  inst:mem_data_reg_3_17
+          10     rDFF         4263        ++           4          28  inst:mem_data_reg_3_18
+          11     rDFF         4292        ++           4          27  inst:mem_data_reg_3_19
+          12     rDFF         4350        ++           4          26  inst:mem_data_reg_3_20
+          13     rDFF         4379        ++           4          25  inst:mem_data_reg_3_21
+          14     rDFF         4408        ++           4          24  inst:mem_data_reg_3_22
+          15     rDFF         4437        ++           4          23  inst:mem_data_reg_3_23
+          16     rDFF         4466        ++           4          22  inst:mem_data_reg_3_24
+          17     rDFF         4495        ++           4          21  inst:mem_data_reg_3_25
+          18     rDFF         4524        ++           4          20  inst:mem_data_reg_3_26
+          19     rDFF         4553        ++           4          19  inst:mem_data_reg_3_27
+          20     rDFF         4582        ++           4          18  inst:mem_data_reg_3_28
+          21     rDFF         4611        ++           4          17  inst:mem_data_reg_3_29
+          22     rDFF         4669        ++           4          16  inst:mem_data_reg_3_30
+          23     rDFF         4698        ++           4          15  inst:mem_data_reg_3_31
+          24     rDFF         4901        ++           4          14  inst:mem_data_reg_4_0
+          25     rDFF         4930        ++           4          13  inst:mem_data_reg_4_1
+          26     rDFF         5249        ++           4          12  inst:mem_data_reg_4_2
+          27     rDFF         5568        ++           4          11  inst:mem_data_reg_4_3
+          28     rDFF         5655        ++           4          10  inst:mem_data_reg_4_4
+          29     rDFF         5684        ++           4           9  inst:mem_data_reg_4_5
+          30     rDFF         5713        ++           4           8  inst:mem_data_reg_4_6
+          31     rDFF         5742        ++           4           7  inst:mem_data_reg_4_7
+          32     rDFF         5771        ++           4           6  inst:mem_data_reg_4_8
+          33     rDFF         5800        ++           4           5  inst:mem_data_reg_4_9
+          34     rDFF         4959        ++           4           4  inst:mem_data_reg_4_10
+          35     rDFF         4988        ++           4           3  inst:mem_data_reg_4_11
+          36     rDFF         5017        ++           4           2  inst:mem_data_reg_4_12
+          37     rDFF         5046        ++           4           1  inst:mem_data_reg_4_13
+
+
+  Control Chain: 5
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          16/port:chip_sdi_5    Pipeline Stages: 0 
+    Load Point Pin Index/Name  16/port:chip_sdi_5
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 5
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          98/port:chip_sdo_5    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  98/port:chip_sdo_5
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         5075        ++           5          37  inst:mem_data_reg_4_14
+           2     rDFF         5104        ++           5          36  inst:mem_data_reg_4_15
+           3     rDFF         5133        ++           5          35  inst:mem_data_reg_4_16
+           4     rDFF         5162        ++           5          34  inst:mem_data_reg_4_17
+           5     rDFF         5191        ++           5          33  inst:mem_data_reg_4_18
+           6     rDFF         5220        ++           5          32  inst:mem_data_reg_4_19
+           7     rDFF         5278        ++           5          31  inst:mem_data_reg_4_20
+           8     rDFF         5307        ++           5          30  inst:mem_data_reg_4_21
+           9     rDFF         5336        ++           5          29  inst:mem_data_reg_4_22
+          10     rDFF         5365        ++           5          28  inst:mem_data_reg_4_23
+          11     rDFF         5394        ++           5          27  inst:mem_data_reg_4_24
+          12     rDFF         5423        ++           5          26  inst:mem_data_reg_4_25
+          13     rDFF         5452        ++           5          25  inst:mem_data_reg_4_26
+          14     rDFF         5481        ++           5          24  inst:mem_data_reg_4_27
+          15     rDFF         5510        ++           5          23  inst:mem_data_reg_4_28
+          16     rDFF         5539        ++           5          22  inst:mem_data_reg_4_29
+          17     rDFF         5597        ++           5          21  inst:mem_data_reg_4_30
+          18     rDFF         5626        ++           5          20  inst:mem_data_reg_4_31
+          19     rDFF         5829        ++           5          19  inst:mem_data_reg_5_0
+          20     rDFF         5858        ++           5          18  inst:mem_data_reg_5_1
+          21     rDFF         6177        ++           5          17  inst:mem_data_reg_5_2
+          22     rDFF         6496        ++           5          16  inst:mem_data_reg_5_3
+          23     rDFF         6583        ++           5          15  inst:mem_data_reg_5_4
+          24     rDFF         6612        ++           5          14  inst:mem_data_reg_5_5
+          25     rDFF         6641        ++           5          13  inst:mem_data_reg_5_6
+          26     rDFF         6670        ++           5          12  inst:mem_data_reg_5_7
+          27     rDFF         6699        ++           5          11  inst:mem_data_reg_5_8
+          28     rDFF         6728        ++           5          10  inst:mem_data_reg_5_9
+          29     rDFF         5887        ++           5           9  inst:mem_data_reg_5_10
+          30     rDFF         5916        ++           5           8  inst:mem_data_reg_5_11
+          31     rDFF         5945        ++           5           7  inst:mem_data_reg_5_12
+          32     rDFF         5974        ++           5           6  inst:mem_data_reg_5_13
+          33     rDFF         6003        ++           5           5  inst:mem_data_reg_5_14
+          34     rDFF         6032        ++           5           4  inst:mem_data_reg_5_15
+          35     rDFF         6061        ++           5           3  inst:mem_data_reg_5_16
+          36     rDFF         6090        ++           5           2  inst:mem_data_reg_5_17
+          37     rDFF         6119        ++           5           1  inst:mem_data_reg_5_18
+
+
+  Control Chain: 6
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          17/port:chip_sdi_6    Pipeline Stages: 0 
+    Load Point Pin Index/Name  17/port:chip_sdi_6
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 6
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          99/port:chip_sdo_6    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  99/port:chip_sdo_6
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         6148        ++           6          37  inst:mem_data_reg_5_19
+           2     rDFF         6206        ++           6          36  inst:mem_data_reg_5_20
+           3     rDFF         6235        ++           6          35  inst:mem_data_reg_5_21
+           4     rDFF         6264        ++           6          34  inst:mem_data_reg_5_22
+           5     rDFF         6293        ++           6          33  inst:mem_data_reg_5_23
+           6     rDFF         6322        ++           6          32  inst:mem_data_reg_5_24
+           7     rDFF         6351        ++           6          31  inst:mem_data_reg_5_25
+           8     rDFF         6380        ++           6          30  inst:mem_data_reg_5_26
+           9     rDFF         6409        ++           6          29  inst:mem_data_reg_5_27
+          10     rDFF         6438        ++           6          28  inst:mem_data_reg_5_28
+          11     rDFF         6467        ++           6          27  inst:mem_data_reg_5_29
+          12     rDFF         6525        ++           6          26  inst:mem_data_reg_5_30
+          13     rDFF         6554        ++           6          25  inst:mem_data_reg_5_31
+          14     rDFF         6757        ++           6          24  inst:mem_data_reg_6_0
+          15     rDFF         6786        ++           6          23  inst:mem_data_reg_6_1
+          16     rDFF         7105        ++           6          22  inst:mem_data_reg_6_2
+          17     rDFF         7424        ++           6          21  inst:mem_data_reg_6_3
+          18     rDFF         7511        ++           6          20  inst:mem_data_reg_6_4
+          19     rDFF         7540        ++           6          19  inst:mem_data_reg_6_5
+          20     rDFF         7569        ++           6          18  inst:mem_data_reg_6_6
+          21     rDFF         7598        ++           6          17  inst:mem_data_reg_6_7
+          22     rDFF         7627        ++           6          16  inst:mem_data_reg_6_8
+          23     rDFF         7656        ++           6          15  inst:mem_data_reg_6_9
+          24     rDFF         6815        ++           6          14  inst:mem_data_reg_6_10
+          25     rDFF         6844        ++           6          13  inst:mem_data_reg_6_11
+          26     rDFF         6873        ++           6          12  inst:mem_data_reg_6_12
+          27     rDFF         6902        ++           6          11  inst:mem_data_reg_6_13
+          28     rDFF         6931        ++           6          10  inst:mem_data_reg_6_14
+          29     rDFF         6960        ++           6           9  inst:mem_data_reg_6_15
+          30     rDFF         6989        ++           6           8  inst:mem_data_reg_6_16
+          31     rDFF         7018        ++           6           7  inst:mem_data_reg_6_17
+          32     rDFF         7047        ++           6           6  inst:mem_data_reg_6_18
+          33     rDFF         7076        ++           6           5  inst:mem_data_reg_6_19
+          34     rDFF         7134        ++           6           4  inst:mem_data_reg_6_20
+          35     rDFF         7163        ++           6           3  inst:mem_data_reg_6_21
+          36     rDFF         7192        ++           6           2  inst:mem_data_reg_6_22
+          37     rDFF         7221        ++           6           1  inst:mem_data_reg_6_23
+
+
+  Control Chain: 7
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          18/port:chip_sdi_7    Pipeline Stages: 0 
+    Load Point Pin Index/Name  18/port:chip_sdi_7
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 7
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name         100/port:chip_sdo_7    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  100/port:chip_sdo_7
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         7250        ++           7          37  inst:mem_data_reg_6_24
+           2     rDFF         7279        ++           7          36  inst:mem_data_reg_6_25
+           3     rDFF         7308        ++           7          35  inst:mem_data_reg_6_26
+           4     rDFF         7337        ++           7          34  inst:mem_data_reg_6_27
+           5     rDFF         7366        ++           7          33  inst:mem_data_reg_6_28
+           6     rDFF         7395        ++           7          32  inst:mem_data_reg_6_29
+           7     rDFF         7453        ++           7          31  inst:mem_data_reg_6_30
+           8     rDFF         7482        ++           7          30  inst:mem_data_reg_6_31
+           9     rDFF         7685        ++           7          29  inst:mem_data_reg_7_0
+          10     rDFF         7714        ++           7          28  inst:mem_data_reg_7_1
+          11     rDFF         8033        ++           7          27  inst:mem_data_reg_7_2
+          12     rDFF         8352        ++           7          26  inst:mem_data_reg_7_3
+          13     rDFF         8439        ++           7          25  inst:mem_data_reg_7_4
+          14     rDFF         8468        ++           7          24  inst:mem_data_reg_7_5
+          15     rDFF         8497        ++           7          23  inst:mem_data_reg_7_6
+          16     rDFF         8526        ++           7          22  inst:mem_data_reg_7_7
+          17     rDFF         8555        ++           7          21  inst:mem_data_reg_7_8
+          18     rDFF         8584        ++           7          20  inst:mem_data_reg_7_9
+          19     rDFF         7743        ++           7          19  inst:mem_data_reg_7_10
+          20     rDFF         7772        ++           7          18  inst:mem_data_reg_7_11
+          21     rDFF         7801        ++           7          17  inst:mem_data_reg_7_12
+          22     rDFF         7830        ++           7          16  inst:mem_data_reg_7_13
+          23     rDFF         7859        ++           7          15  inst:mem_data_reg_7_14
+          24     rDFF         7888        ++           7          14  inst:mem_data_reg_7_15
+          25     rDFF         7917        ++           7          13  inst:mem_data_reg_7_16
+          26     rDFF         7946        ++           7          12  inst:mem_data_reg_7_17
+          27     rDFF         7975        ++           7          11  inst:mem_data_reg_7_18
+          28     rDFF         8004        ++           7          10  inst:mem_data_reg_7_19
+          29     rDFF         8062        ++           7           9  inst:mem_data_reg_7_20
+          30     rDFF         8091        ++           7           8  inst:mem_data_reg_7_21
+          31     rDFF         8120        ++           7           7  inst:mem_data_reg_7_22
+          32     rDFF         8149        ++           7           6  inst:mem_data_reg_7_23
+          33     rDFF         8178        ++           7           5  inst:mem_data_reg_7_24
+          34     rDFF         8207        ++           7           4  inst:mem_data_reg_7_25
+          35     rDFF         8236        ++           7           3  inst:mem_data_reg_7_26
+          36     rDFF         8265        ++           7           2  inst:mem_data_reg_7_27
+          37     rDFF         8294        ++           7           1  inst:mem_data_reg_7_28
+
+
+  Control Chain: 8
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          19/port:chip_sdi_8    Pipeline Stages: 0 
+    Load Point Pin Index/Name  19/port:chip_sdi_8
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 8
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name         101/port:chip_sdo_8    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  101/port:chip_sdo_8
+    Unload Point In Phase with Load Point
+    Length: 37
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF         8323        ++           8          37  inst:mem_data_reg_7_29
+           2     rDFF         8381        ++           8          36  inst:mem_data_reg_7_30
+           3     rDFF         8410        ++           8          35  inst:mem_data_reg_7_31
+           4     rDFF         8613        ++           8          34  inst:mem_eop_reg_0
+           5     rDFF         8642        ++           8          33  inst:mem_eop_reg_1
+           6     rDFF         8671        ++           8          32  inst:mem_eop_reg_2
+           7     rDFF         8700        ++           8          31  inst:mem_eop_reg_3
+           8     rDFF         8729        ++           8          30  inst:mem_eop_reg_4
+           9     rDFF         8758        ++           8          29  inst:mem_eop_reg_5
+          10     rDFF         8787        ++           8          28  inst:mem_eop_reg_6
+          11     rDFF         8816        ++           8          27  inst:mem_eop_reg_7
+          12     rDFF         8845        ++           8          26  inst:mem_sop_reg_0
+          13     rDFF         8874        ++           8          25  inst:mem_sop_reg_1
+          14     rDFF         8903        ++           8          24  inst:mem_sop_reg_2
+          15     rDFF         8932        ++           8          23  inst:mem_sop_reg_3
+          16     rDFF         8961        ++           8          22  inst:mem_sop_reg_4
+          17     rDFF         8990        ++           8          21  inst:mem_sop_reg_5
+          18     rDFF         9019        ++           8          20  inst:mem_sop_reg_6
+          19     rDFF         9048        ++           8          19  inst:mem_sop_reg_7
+          20     rDFF         9077        ++           8          18  inst:mem_src_reg_0
+          21     rDFF         9106        ++           8          17  inst:mem_src_reg_1
+          22     rDFF         9135        ++           8          16  inst:mem_src_reg_2
+          23     rDFF         9164        ++           8          15  inst:mem_src_reg_3
+          24     rDFF         9193        ++           8          14  inst:mem_src_reg_4
+          25     rDFF         9222        ++           8          13  inst:mem_src_reg_5
+          26     rDFF         9251        ++           8          12  inst:mem_src_reg_6
+          27     rDFF         9280        ++           8          11  inst:mem_src_reg_7
+          28     rDFF         9309        ++           8          10  inst:occ_reg_0
+          29     rDFF         9329        ++           8           9  inst:occ_reg_1
+          30     rDFF         9349        ++           8           8  inst:occ_reg_2
+          31     rDFF         9369        ++           8           7  inst:occ_reg_3
+          32     rDFF         9389        ++           8           6  inst:rd_ptr_reg_0
+          33     rDFF         9409        ++           8           5  inst:rd_ptr_reg_1
+          34     rDFF         9429        ++           8           4  inst:rd_ptr_reg_2
+          35     rDFF         9449        ++           8           3  inst:wr_ptr_reg_0
+          36     rDFF         9469        ++           8           2  inst:wr_ptr_reg_1
+          37     rDFF         9489        ++           8           1  inst:wr_ptr_reg_2
+
+
+Report completed.
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            6,516,384  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.01                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:53:03 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------

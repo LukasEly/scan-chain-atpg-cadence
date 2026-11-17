@@ -1,0 +1,215 @@
+Starting Command: report_test_structures 
+
+INFO (TDA-005): Command Line Invocation: 
+            report_test_structures -reportscanchain all -testmode FULLSCAN -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626212332-636068000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 21:23:32 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1898305.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D32_P2_W7/outputs/dft/modus_atpg/testresults/logs/log_report_test_structures_FULLSCAN_111626212332-636068000
+            -STDOUT summary
+            -reportscanchain all
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+          2,703  Blocks                         912  Blocks
+          8,334  Pins                           912  Nodes
+          5,077  Nets
+
+Primary Inputs:                      Primary Outputs:
+         84  Input Only                        44  Output Only
+          0  Input/Output                       0  Input/Output
+         84  Total Inputs                      44  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+          0  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+          0  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+        231  MUX2s
+          0  Latches
+
+
+         82  Rising  Edge Flop
+         82  Total Flops
+
+        223  Technology Library Cell Instances
+
+[end TLM_055] 
+
+Information for Test Mode:  FULLSCAN
+-------------------------
+
+         Scan Type = GSD
+
+
+
+
+Control/Observe Chain Information for Test Mode:  FULLSCAN
+-----------------------------------------------
+
+     1 Control Chains (0 Control Only)
+     1 Observe Chains (0 Observe Only)
+     1 Chains are Control and Observe
+
+  Longest Scan Chain: 82 bits
+  Average Scan Chain Length: 82 bits
+
+
+  Control Chain: 1
+    Fed by: Scan-In
+    Number of Control Points: 1
+      Control Point Pin Index/Name          10/port:chip_sdi_1    Pipeline Stages: 0 
+    Load Point Pin Index/Name  10/port:chip_sdi_1
+    Length: 82
+    Scan Section: Scan_Section_Sequence
+  Observe Chain: 1
+    Number of Observe Points: 1
+      Observe Point Pin Index/Name          85/port:chip_sdo_1    Pipeline Stages: 0 
+    Unload Point Pin Index/Name  85/port:chip_sdo_1
+    Unload Point In Phase with Load Point
+    Length: 82
+    Scan Section: Scan_Section_Sequence
+
+    Position     Type  Block Index  IO Phase  ObserveChn  ObservePos  Block Name
+    --------  -------  -----------  --------  ----------  ----------  ----------
+           1     rDFF            1        ++           1          82  inst:credit0_reg_0
+           2     rDFF           21        ++           1          81  inst:credit0_reg_1
+           3     rDFF           41        ++           1          80  inst:credit0_reg_2
+           4     rDFF           61        ++           1          79  inst:credit1_reg_0
+           5     rDFF           81        ++           1          78  inst:credit1_reg_1
+           6     rDFF          101        ++           1          77  inst:credit1_reg_2
+           7     rDFF          553        ++           1          76  inst:lock_src_reg
+           8     rDFF          573        ++           1          75  inst:locked_reg
+           9     rDFF          593        ++           1          74  inst:mem_data_reg_0_0
+          10     rDFF          622        ++           1          73  inst:mem_data_reg_0_1
+          11     rDFF          941        ++           1          72  inst:mem_data_reg_0_2
+          12     rDFF         1260        ++           1          71  inst:mem_data_reg_0_3
+          13     rDFF         1347        ++           1          70  inst:mem_data_reg_0_4
+          14     rDFF         1376        ++           1          69  inst:mem_data_reg_0_5
+          15     rDFF         1405        ++           1          68  inst:mem_data_reg_0_6
+          16     rDFF         1434        ++           1          67  inst:mem_data_reg_0_7
+          17     rDFF         1463        ++           1          66  inst:mem_data_reg_0_8
+          18     rDFF         1492        ++           1          65  inst:mem_data_reg_0_9
+          19     rDFF          651        ++           1          64  inst:mem_data_reg_0_10
+          20     rDFF          680        ++           1          63  inst:mem_data_reg_0_11
+          21     rDFF          709        ++           1          62  inst:mem_data_reg_0_12
+          22     rDFF          738        ++           1          61  inst:mem_data_reg_0_13
+          23     rDFF          767        ++           1          60  inst:mem_data_reg_0_14
+          24     rDFF          796        ++           1          59  inst:mem_data_reg_0_15
+          25     rDFF          825        ++           1          58  inst:mem_data_reg_0_16
+          26     rDFF          854        ++           1          57  inst:mem_data_reg_0_17
+          27     rDFF          883        ++           1          56  inst:mem_data_reg_0_18
+          28     rDFF          912        ++           1          55  inst:mem_data_reg_0_19
+          29     rDFF          970        ++           1          54  inst:mem_data_reg_0_20
+          30     rDFF          999        ++           1          53  inst:mem_data_reg_0_21
+          31     rDFF         1028        ++           1          52  inst:mem_data_reg_0_22
+          32     rDFF         1057        ++           1          51  inst:mem_data_reg_0_23
+          33     rDFF         1086        ++           1          50  inst:mem_data_reg_0_24
+          34     rDFF         1115        ++           1          49  inst:mem_data_reg_0_25
+          35     rDFF         1144        ++           1          48  inst:mem_data_reg_0_26
+          36     rDFF         1173        ++           1          47  inst:mem_data_reg_0_27
+          37     rDFF         1202        ++           1          46  inst:mem_data_reg_0_28
+          38     rDFF         1231        ++           1          45  inst:mem_data_reg_0_29
+          39     rDFF         1289        ++           1          44  inst:mem_data_reg_0_30
+          40     rDFF         1318        ++           1          43  inst:mem_data_reg_0_31
+          41     rDFF         1521        ++           1          42  inst:mem_data_reg_1_0
+          42     rDFF         1550        ++           1          41  inst:mem_data_reg_1_1
+          43     rDFF         1869        ++           1          40  inst:mem_data_reg_1_2
+          44     rDFF         2188        ++           1          39  inst:mem_data_reg_1_3
+          45     rDFF         2275        ++           1          38  inst:mem_data_reg_1_4
+          46     rDFF         2304        ++           1          37  inst:mem_data_reg_1_5
+          47     rDFF         2333        ++           1          36  inst:mem_data_reg_1_6
+          48     rDFF         2362        ++           1          35  inst:mem_data_reg_1_7
+          49     rDFF         2391        ++           1          34  inst:mem_data_reg_1_8
+          50     rDFF         2420        ++           1          33  inst:mem_data_reg_1_9
+          51     rDFF         1579        ++           1          32  inst:mem_data_reg_1_10
+          52     rDFF         1608        ++           1          31  inst:mem_data_reg_1_11
+          53     rDFF         1637        ++           1          30  inst:mem_data_reg_1_12
+          54     rDFF         1666        ++           1          29  inst:mem_data_reg_1_13
+          55     rDFF         1695        ++           1          28  inst:mem_data_reg_1_14
+          56     rDFF         1724        ++           1          27  inst:mem_data_reg_1_15
+          57     rDFF         1753        ++           1          26  inst:mem_data_reg_1_16
+          58     rDFF         1782        ++           1          25  inst:mem_data_reg_1_17
+          59     rDFF         1811        ++           1          24  inst:mem_data_reg_1_18
+          60     rDFF         1840        ++           1          23  inst:mem_data_reg_1_19
+          61     rDFF         1898        ++           1          22  inst:mem_data_reg_1_20
+          62     rDFF         1927        ++           1          21  inst:mem_data_reg_1_21
+          63     rDFF         1956        ++           1          20  inst:mem_data_reg_1_22
+          64     rDFF         1985        ++           1          19  inst:mem_data_reg_1_23
+          65     rDFF         2014        ++           1          18  inst:mem_data_reg_1_24
+          66     rDFF         2043        ++           1          17  inst:mem_data_reg_1_25
+          67     rDFF         2072        ++           1          16  inst:mem_data_reg_1_26
+          68     rDFF         2101        ++           1          15  inst:mem_data_reg_1_27
+          69     rDFF         2130        ++           1          14  inst:mem_data_reg_1_28
+          70     rDFF         2159        ++           1          13  inst:mem_data_reg_1_29
+          71     rDFF         2217        ++           1          12  inst:mem_data_reg_1_30
+          72     rDFF         2246        ++           1          11  inst:mem_data_reg_1_31
+          73     rDFF         2449        ++           1          10  inst:mem_eop_reg_0
+          74     rDFF         2478        ++           1           9  inst:mem_eop_reg_1
+          75     rDFF         2507        ++           1           8  inst:mem_sop_reg_0
+          76     rDFF         2536        ++           1           7  inst:mem_sop_reg_1
+          77     rDFF         2565        ++           1           6  inst:mem_src_reg_0
+          78     rDFF         2594        ++           1           5  inst:mem_src_reg_1
+          79     rDFF         2623        ++           1           4  inst:occ_reg_0
+          80     rDFF         2643        ++           1           3  inst:occ_reg_1
+          81     rDFF         2663        ++           1           2  inst:rd_ptr_reg_0
+          82     rDFF         2683        ++           1           1  inst:wr_ptr_reg_0
+
+
+Report completed.
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            5,784,560  bytes
+
+                      CPU Time =    0:00:00.00
+                  Elapsed Time =    0:00:00.01                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 21:23:32 2026  -03
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TLM-055): Design Summary
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
