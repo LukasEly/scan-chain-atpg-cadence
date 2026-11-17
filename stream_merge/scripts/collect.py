@@ -168,10 +168,15 @@ def main():
             curves.append({"tag": tag, "phase": phase, "tests": n + offset, "global_cov": cov})
 
         # simulação dos padrões: procura erros/miscompares no log do xrun
+        # placar impresso pelo testbench gerado pelo Modus ao fim da simulação
         sim = read(os.path.join(logdir, "sim_stdout.log"))
         if sim:
-            errs = len(re.findall(r"\*E,|miscompare|mismatch", sim, re.I))
-            row["sim_errors"] = errs
+            for key, col in (("Total Passed Tests", "sim_passed"), ("Total Failed Tests", "sim_failed"),
+                             ("Total Good Compares", "sim_good"), ("Total Miscompares", "sim_miscompares")):
+                m = re.findall(re.escape(key) + r":\s*(\d+)", sim)
+                if m:
+                    row[col] = int(m[-1])
+            row["sim_errors"] = len(re.findall(r"^\S*: \*E,", sim, re.M))
 
         # overhead de área causado pelo scan
         if row.get("pre_cell_area") and row.get("post_cell_area"):
@@ -213,7 +218,8 @@ def main():
     for r in rows:
         print(f"  {r['tag']:<16} flops={r.get('post_g_sequential_inst','?'):>5} "
               f"area +{r.get('area_overhead_pct','?')}%  TCov={r.get('tcov','?')} "
-              f"testes={r.get('seq_total','?')} sim_err={r.get('sim_errors','-')}")
+              f"testes={r.get('seq_total','?')} "
+              f"sim={r.get('sim_passed','?')}/{r.get('seq_total','?')} miscomp={r.get('sim_miscompares','?')}")
 
 
 if __name__ == "__main__":
