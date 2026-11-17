@@ -126,7 +126,8 @@ def parse_atpg_curve(txt):
             phase = "logic"
         m = re.search(r"TDA-220\):\s+(\d+)\s+(\d+)\s+(\d+)\s+([\d.]+)%\s+([\d.]+)%", line)
         if m:
-            curve.append((phase, int(m.group(1)), float(m.group(5))))
+            # coluna "Eff." (testes efetivos, os que foram mantidos)
+            curve.append((phase, int(m.group(2)), float(m.group(5))))
     return curve
 
 
@@ -157,8 +158,12 @@ def main():
         modus_logs = []
         if os.path.isdir(mlogdir):
             modus_logs = [os.path.join(mlogdir, f) for f in sorted(os.listdir(mlogdir))]
-        atpg_txt = "\n".join(read(p) for p in modus_logs
-                             if os.path.basename(p).startswith("log_create_logic_tests"))
+        # o Modus deixa duas cópias do mesmo log (com e sem carimbo de data);
+        # usa só a mais recente para não duplicar a curva de cobertura
+        atpg_logs = sorted((p for p in modus_logs
+                            if os.path.basename(p).startswith("log_create_logic_tests")),
+                           key=os.path.getmtime)
+        atpg_txt = read(atpg_logs[-1]) if atpg_logs else ""
         row.update(parse_modus(atpg_txt or read(os.path.join(logdir, "modus_stdout.log"))))
         # curva cobertura x nº de testes (scan + logic acumulados)
         offset = 0
