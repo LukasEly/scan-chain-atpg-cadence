@@ -60,8 +60,9 @@ def parse_gates(txt):
             if s.startswith(key + " ") or s == key:
                 n = nums(s[len(key):])
                 if len(n) >= 2:
-                    out[key + "_inst"] = int(n[0])
-                    out[key + "_area"] = n[1]
+                    # prefixo "g_" para não colidir com total_area do report_area
+                    out["g_" + key + "_inst"] = int(n[0])
+                    out["g_" + key + "_area"] = n[1]
     return out
 
 
@@ -103,10 +104,30 @@ def parse_modus(txt):
                        tcov=n[5], atcov=n[6])
         elif len(n) >= 2:
             out.update(faults=int(n[0]), tcov=n[-2], atcov=n[-1])
-    m = re.findall(r"(\d+)\s+(?:test\s+sequences|patterns)", txt, re.I)
-    if m:
-        out["patterns"] = int(m[-1])
+    # tabela "Final Pattern Statistics": Scan / Logic / Total (# Test Sequences)
+    fps = txt.rfind("Final Pattern Statistics")
+    if fps >= 0:
+        block = txt[fps:fps + 1500]
+        for key in ("Scan", "Logic", "Total"):
+            m = re.search(r"^\s*" + key + r"\s+(\d+)\s*$", block, re.M)
+            if m:
+                out["seq_" + key.lower()] = int(m.group(1))
     return out
+
+
+def parse_atpg_curve(txt):
+    """Linhas de progresso do ATPG (TDA-220): #testes simulados x cobertura.
+    Retorna lista de (fase, testes, cobertura%)."""
+    curve, phase = [], ""
+    for line in txt.splitlines():
+        if "Starting Scan Test" in line:
+            phase = "scan"
+        elif "Starting Static Logic Test" in line:
+            phase = "logic"
+        m = re.search(r"TDA-220\):\s+(\d+)\s+(\d+)\s+(\d+)\s+([\d.]+)%\s+([\d.]+)%", line)
+        if m:
+            curve.append((phase, int(m.group(1)), float(m.group(5))))
+    return curve
 
 
 def main():
@@ -114,7 +135,7 @@ def main():
     res_dir = sys.argv[2] if len(sys.argv) > 2 else "results"
     os.makedirs(os.path.join(res_dir, "reports"), exist_ok=True)
 
-    rows = []
+    rows, curves = [], []
     for tag in sorted(os.listdir(runs_dir)):
         run = os.path.join(runs_dir, tag)
         rep = os.path.join(run, "reports")
@@ -139,6 +160,18 @@ def main():
         atpg_txt = "\n".join(read(p) for p in modus_logs
                              if os.path.basename(p).startswith("log_create_logic_tests"))
         row.update(parse_modus(atpg_txt or read(os.path.join(logdir, "modus_stdout.log"))))
+        # curva cobertura x nº de testes (scan + logic acumulados)
+        offset = 0
+        for phase, n, cov in parse_atpg_curve(atpg_txt):
+            if phase == "logic" and offset == 0:
+                offset = row.get("seq_scan", 0)
+            curves.append({"tag": tag, "phase": phase, "tests": n + offset, "global_cov": cov})
+
+        # simulação dos padrões: procura erros/miscompares no log do xrun
+        sim = read(os.path.join(logdir, "sim_stdout.log"))
+        if sim:
+            errs = len(re.findall(r"\*E,|miscompare|mismatch", sim, re.I))
+            row["sim_errors"] = errs
 
         # overhead de área causado pelo scan
         if row.get("pre_cell_area") and row.get("post_cell_area"):
@@ -172,11 +205,15 @@ def main():
         w = csv.DictWriter(f, fieldnames=keys)
         w.writeheader()
         w.writerows(rows)
+    with open(os.path.join(res_dir, "atpg_curves.csv"), "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["tag", "phase", "tests", "global_cov"])
+        w.writeheader()
+        w.writerows(curves)
     print(f"{len(rows)} rodadas -> {out}")
     for r in rows:
-        print(f"  {r['tag']:<16} flops={r.get('post_sequential_inst','?'):>5} "
-              f"area pre={r.get('pre_cell_area','?')} post={r.get('post_cell_area','?')} "
-              f"(+{r.get('area_overhead_pct','?')}%)  TCov={r.get('tcov','?')}")
+        print(f"  {r['tag']:<16} flops={r.get('post_g_sequential_inst','?'):>5} "
+              f"area +{r.get('area_overhead_pct','?')}%  TCov={r.get('tcov','?')} "
+              f"testes={r.get('seq_total','?')} sim_err={r.get('sim_errors','-')}")
 
 
 if __name__ == "__main__":

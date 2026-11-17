@@ -72,7 +72,9 @@ find . -path ./logs -prune -o -name "log_*" -type f -print 2>/dev/null \
 ## ---- 3) Simulação dos padrões (opcional) ----------------------------------
 if [ "${SIM:-0}" = "1" ]; then
   if [ -x outputs/dft/modus_atpg/run_fullscan_sim ]; then
-    ( cd outputs/dft/modus_atpg && ./run_fullscan_sim ) > logs/sim_stdout.log 2>&1
+    # o script gerado usa caminhos relativos ao diretório da rodada
+    # (outputs/dft/modus_atpg/...), então é executado daqui mesmo
+    ./outputs/dft/modus_atpg/run_fullscan_sim < /dev/null > logs/sim_stdout.log 2>&1
     echo "[ok] Simulação (veja logs/sim_stdout.log)"
   else
     echo "[aviso] run_fullscan_sim não encontrado"

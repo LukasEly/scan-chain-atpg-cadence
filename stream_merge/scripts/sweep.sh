@@ -25,8 +25,16 @@ fi
 echo "Configurações: $CONFIGS"
 for c in $CONFIGS; do
   IFS=, read -r D P W <<< "$c"
-  "$ROOT/scripts/run_one.sh" "$D" "$P" "$W" || echo "!! falhou: $c"
+  NCHAINS=1 "$ROOT/scripts/run_one.sh" "$D" "$P" "$W" || echo "!! falhou: $c"
 done
+
+# número de cadeias na configuração default: mostra a troca entre tempo de
+# shift (comprimento da cadeia) e pinos extras de scan
+if [ "${QUICK:-0}" != "1" ]; then
+  for n in 2 4 8; do
+    NCHAINS=$n "$ROOT/scripts/run_one.sh" 32 8 7 || echo "!! falhou: NCHAINS=$n"
+  done
+fi
 
 mkdir -p "$ROOT/results"
 python3 "$ROOT/scripts/collect.py" "$ROOT/runs" "$ROOT/results"
