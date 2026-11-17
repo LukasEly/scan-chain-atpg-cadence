@@ -1,0 +1,139 @@
+Starting Command: write_vectors 
+
+INFO (TDA-005): Command Line Invocation: 
+            write_vectors -language verilog -inexperiment stream_merge_atpg -testmode FULLSCAN -scanformat parallel -workdir /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg -stdout summary  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 21.10-p003_1, built Aug 24 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626222605-509561000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Monday Nov 16 22:26:05 2026  -03
+            Host machine is paxos.inf.pucrs.br, x86_64 running Linux 4.18.0-553.155.1.el8_10.x86_64.
+            This job is process number 1981959.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg
+            -TESTMODE FULLSCAN
+
+            -INEXPERIMENT stream_merge_atpg
+            -LOGFILE /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/logs/log_write_vectors_FULLSCAN_stream_merge_atpg_111626222605-509561000
+            -STDOUT summary
+            -scanformat parallel
+          + -language verilog
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TVE-001): Verilog write vectors started.   [end TVE_001] 
+INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-103): There was no specified SCAN offset for this clock 'pin clk'.  A default clock offset of 16.000000 ns will be used.   [end TVE_103] 
+INFO (TVE-004): Reading test section 1.1. Test section type equals scan.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/verilog/cycleMap.FULLSCAN.stream_merge_atpg.   [end TVE_003] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.data.scan.ex1.ts1.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 344 total cycles, of which 4 are test cycles, 340 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 170 total measures, of which 0 are PO measures and 170 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-004): Reading test section 1.2. Test section type equals logic.   [end TVE_004] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.data.logic.ex1.ts2.verilog.   [end TVE_003] 
+INFO (TVE-005): Created 8776 total cycles, of which 106 are test cycles, 8670 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.   [end TVE_005] 
+INFO (TVE-008): Created 10090 total measures, of which 1590 are PO measures and 8500 are SO (Scan Out) measures.  [end TVE_008] 
+INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/verilog/VER.FULLSCAN.stream_merge_atpg.mainsim.v.   [end TVE_003] 
+
+INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+    Test       | Global   | Global   | Global   | Global   | Global   | Global   | Sequence   | Overlapped | Total      | 
+    Sequence   | Static   | Static   | Static   | Dynamic  | Dynamic  | Dynamic  | Cycle      | Cycle      | Cycle      | 
+               | Total    | Delta    | Adjusted | Total    | Delta    | Adjusted | Count      | Count      | Count      | 
+               | Coverage | Coverage | Total    | Coverage | Coverage | Total    |            |            |            | 
+               |          |          | Coverage |          |          | Coverage |            |            |            | 
+     1.1.1.1.1 |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |  0.00    |          1 |          0 |          1 |
+     1.1.1.2.1 |  29.78   |  0.00    |  29.78   |  0.00    |  0.00    |  0.00    |        343 |          0 |        344 |
+     1.2.1.1.1 |  29.78   |  0.00    |  29.78   |  0.00    |  0.00    |  0.00    |          1 |          0 |        345 |
+     1.2.1.2.1 |  36.87   |  7.09    |  36.87   |  0.00    |  0.00    |  0.00    |        343 |        171 |        688 |
+     1.2.1.2.2 |  42.09   |  5.22    |  42.09   |  0.00    |  0.00    |  0.00    |        172 |        171 |        860 |
+     1.2.1.2.3 |  42.69   |  0.60    |  42.69   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1032 |
+     1.2.1.2.4 |  44.38   |  1.69    |  44.38   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1204 |
+     1.2.1.2.5 |  46.34   |  1.97    |  46.34   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1376 |
+     1.2.1.2.6 |  47.79   |  1.44    |  47.79   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1548 |
+     1.2.1.2.7 |  48.78   |  1.00    |  48.78   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1720 |
+     1.2.1.2.8 |  50.55   |  1.77    |  50.55   |  0.00    |  0.00    |  0.00    |        172 |        171 |       1892 |
+     1.2.1.2.9 |  53.93   |  3.38    |  53.93   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2064 |
+    1.2.1.2.10 |  65.57   |  11.64   |  65.57   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2236 |
+    1.2.1.2.11 |  66.82   |  1.24    |  66.82   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2408 |
+    1.2.1.2.12 |  69.65   |  2.84    |  69.65   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2580 |
+    1.2.1.2.13 |  72.69   |  3.03    |  72.69   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2752 |
+    1.2.1.2.14 |  73.48   |  0.80    |  73.48   |  0.00    |  0.00    |  0.00    |        172 |        171 |       2924 |
+    1.2.1.2.15 |  90.62   |  17.14   |  90.62   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3096 |
+    1.2.1.2.16 |  91.39   |  0.77    |  91.39   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3268 |
+     1.2.1.3.1 |  91.59   |  0.20    |  91.59   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3440 |
+     1.2.1.3.2 |  91.79   |  0.20    |  91.79   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3612 |
+     1.2.1.3.3 |  92.06   |  0.27    |  92.06   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3784 |
+     1.2.1.3.4 |  92.16   |  0.10    |  92.16   |  0.00    |  0.00    |  0.00    |        172 |        171 |       3956 |
+     1.2.1.3.5 |  92.26   |  0.10    |  92.26   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4128 |
+     1.2.1.3.6 |  92.29   |  0.02    |  92.29   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4300 |
+     1.2.1.3.7 |  92.51   |  0.22    |  92.51   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4472 |
+     1.2.1.3.8 |  92.74   |  0.22    |  92.74   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4644 |
+     1.2.1.3.9 |  92.81   |  0.07    |  92.81   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4816 |
+    1.2.1.3.10 |  92.99   |  0.17    |  92.99   |  0.00    |  0.00    |  0.00    |        172 |        171 |       4988 |
+    1.2.1.3.11 |  93.46   |  0.47    |  93.46   |  0.00    |  0.00    |  0.00    |        172 |        171 |       5160 |
+    1.2.1.3.12 |  93.66   |  0.20    |  93.66   |  0.00    |  0.00    |  0.00    |        172 |        171 |       5332 |
+    1.2.1.3.13 |  94.85   |  1.19    |  94.85   |  0.00    |  0.00    |  0.00    |        172 |        171 |       5504 |
+    1.2.1.3.14 |  95.50   |  0.65    |  95.50   |  0.00    |  0.00    |  0.00    |        172 |        171 |       5676 |
+    1.2.1.3.15 |  96.12   |  0.62    |  96.12   |  0.00    |  0.00    |  0.00    |        172 |        171 |       5848 |
+    1.2.1.3.16 |  96.19   |  0.07    |  96.19   |  0.00    |  0.00    |  0.00    |        172 |        171 |       6020 |
+     1.2.1.4.1 |  97.24   |  1.04    |  97.24   |  0.00    |  0.00    |  0.00    |        173 |        171 |       6193 |
+     1.2.1.4.2 |  97.96   |  0.72    |  97.96   |  0.00    |  0.00    |  0.00    |        173 |        171 |       6366 |
+     1.2.1.4.3 |  98.41   |  0.45    |  98.41   |  0.00    |  0.00    |  0.00    |        173 |        171 |       6539 |
+     1.2.1.5.1 |  98.68   |  0.27    |  98.68   |  0.00    |  0.00    |  0.00    |        172 |        171 |       6711 |
+     1.2.1.5.2 |  98.76   |  0.07    |  98.76   |  0.00    |  0.00    |  0.00    |        172 |        171 |       6883 |
+     1.2.1.5.3 |  98.81   |  0.05    |  98.81   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7055 |
+     1.2.1.5.4 |  99.28   |  0.47    |  99.28   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7227 |
+     1.2.1.5.5 |  99.33   |  0.05    |  99.33   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7399 |
+     1.2.1.5.6 |  99.45   |  0.12    |  99.45   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7571 |
+     1.2.1.5.7 |  99.68   |  0.22    |  99.68   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7743 |
+     1.2.1.5.8 |  99.73   |  0.05    |  99.73   |  0.00    |  0.00    |  0.00    |        172 |        171 |       7915 |
+     1.2.1.5.9 |  99.75   |  0.02    |  99.75   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8087 |
+    1.2.1.5.10 |  99.78   |  0.02    |  99.78   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8259 |
+    1.2.1.5.11 |  99.83   |  0.05    |  99.83   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8431 |
+    1.2.1.5.12 |  99.85   |  0.02    |  99.85   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8603 |
+    1.2.1.5.13 |  99.95   |  0.10    |  99.95   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8775 |
+    1.2.1.5.14 |  99.98   |  0.02    |  99.98   |  0.00    |  0.00    |  0.00    |        172 |        171 |       8947 |
+    1.2.1.5.15 |  100.00   |  0.02    |  100.00   |  0.00    |  0.00    |  0.00    |        173 |          0 |       9120 |
+  [end TVE_050] 
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =            7,020,144  bytes
+
+                      CPU Time =    0:00:00.02
+                  Elapsed Time =    0:00:00.08                    [end TDA_001]
+
+     Date Ended:  Monday Nov 16 22:26:05 2026  -03
+
+INFO (TVE-002): Verilog write vectors has completed.   [end TVE_002] 
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TVE-001): Verilog write vectors started.    
+      1 INFO (TVE-002): Verilog write vectors has completed.    
+      4 INFO (TVE-003): Verilog write vectors output file will be: /home/gabriel.decian/Confiabilidade/desafio2/scan-chain-atpg-cadence/stream_merge/runs/D16_P8_W7/outputs/dft/modus_atpg/testresults/verilog/cycleMap.FULLSCAN.stream_merge_atpg.    
+      2 INFO (TVE-004): Reading test section 1.1. Test section type equals scan.    
+      2 INFO (TVE-005): Created 344 total cycles, of which 4 are test cycles, 340 are scan cycles, 0 are dynamic timed cycles and 0 are dynamic cycles that are not timed.    
+      2 INFO (TVE-008): Created 170 total measures, of which 0 are PO measures and 170 are SO (Scan Out) measures.   
+      1 INFO (TVE-050):         TEST SEQUENCE COVERAGE ESTIMATE REPORT  
+      2 INFO (TVE-103): There was no specified TEST offset for this clock 'pin clk'.  A default clock offset of 8.000000 ns will be used.    
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
